@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 900px;
+    background-color: springgreen;
+    margin: 0 auto auto auto;
+    background-image: linear-gradient(rgba(91, 255, 64, 0.98), rgba(91, 255, 166, 0.8));
+}
+#header2{
+    width: 900px;
+    margin: 0 auto auto auto;
+    background-color: #3dd1d0;
+}
+#wrap {
+    width: 900px;
+    background-color: black;
+    margin: 0 auto auto auto;
+
+}
+
+#footer {
+    width: 900px;
+    height: 40px;
+    background-color: black;
+    margin: 0 auto auto auto;
+    color: aliceblue;
+    padding-top: 1em;
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(255,255,0);
+}
