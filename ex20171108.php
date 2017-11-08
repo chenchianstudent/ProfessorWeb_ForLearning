@@ -8,6 +8,9 @@
 $var = 陳麒安105021007poi;
 $n=$_POST['n'];
 $m=$_POST['m'];
+$r=$_POST['r'];
+$g=$_POST['g'];
+$b=$_POST['b'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,7 +22,7 @@ $m=$_POST['m'];
     <title>Document</title>
 </head>
 <body>
-<?php echo $var ?>
+<?php echo "<h1 align='center'><span style='color:rgb($r,$g,$b);'>".$var."</h1></span>" ?>
 <table align="center" border="2">
     <?php
 
