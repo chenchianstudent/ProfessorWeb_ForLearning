@@ -10,11 +10,11 @@
 <?php
 //資料庫設定
 //資料庫位置
-$db_server = "localhost";
+$db_server = "http://120.108.117.245/phpmyadmin";
 //資料庫名稱
-$db_name = "mydb";
+$db_name = "chenchian";
 //資料庫管理者帳號
-$db_user = "root";
+$db_user = "27850457";
 //資料庫管理者密碼
 $db_passwd = "1234";
 //對資料庫連線
