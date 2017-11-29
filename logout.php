@@ -12,7 +12,7 @@
 //將session清空
 unset($_SESSION['username']);
 echo '登出中......';
-echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
+echo '<meta http-equiv=REFRESH CONTENT=1;url=index1.php>';
 ?>
 (6) 加入(註冊)會員 - 「填寫」會員資料 (register.php)
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
