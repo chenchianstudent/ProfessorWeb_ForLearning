@@ -22,16 +22,16 @@ if($_SESSION['username'] != null)
 
     //將資料庫裡的所有會員資料顯示在畫面上
     $sql = "SELECT * FROM member_table";
-    $result = mysql_query($sql);
-    while($row = mysql_fetch_row($result))
+    $result = mysqli_query($sql);
+    while($row = mysqli_fetch_row($result))
     {
         echo "$row[0] - 名字(帳號)：$row[1], " .
             "電話：$row[3], 地址：$row[4], 備註：$row[5]<br>";
     }
 }
-else
+/*else
 {
     echo '您無權限觀看此頁面!';
     echo '<meta http-equiv=REFRESH CONTENT=2;url=index1.php>';
 }
-?>
+?>*/

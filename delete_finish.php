@@ -26,9 +26,10 @@ if($_SESSION['username'] != null)
         echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
     }
 }
-else
+/*else
 {
     echo '您無權限觀看此頁面!';
     echo '<meta http-equiv=REFRESH CONTENT=2;url=index1.php>';
 }
 ?>
+*/
