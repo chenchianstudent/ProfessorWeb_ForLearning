@@ -62,7 +62,23 @@
 
 
 </div>
+<button onclick="createA()">新增項目</button>
+<script>
+    var i = 0;
+    var ul = document.getElementsByTagName("ul")[0];
+    function createA(){
+        var a = document.createElement("li");
+        var b = document.createAttribute("class");
+        b.value = "item_a";
+        var c = document.createTextNode("項目"+(++i));
 
+        a.setAttributeNode(b);
+       a.appendChild(c);
+        ul.appendChild(a);
+    }
+
+
+</script>
 
 <div id="footer"><p align="center">Powerd by 陳麒安</p>
     <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>

@@ -53,6 +53,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="page1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pweb4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pweb4.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pweb2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pweb2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pweb2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2725">
-              <caret line="109" column="33" lean-forward="false" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
+            <state relative-caret-position="-1634">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -95,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pweb-1.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pweb-1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pweb-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="152">
+              <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -151,8 +161,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/pweb3.html" />
         <option value="$PROJECT_DIR$/pweb4.html" />
-        <option value="$PROJECT_DIR$/pweb-1.html" />
         <option value="$PROJECT_DIR$/pweb2.html" />
+        <option value="$PROJECT_DIR$/pweb-1.html" />
       </list>
     </option>
   </component>
@@ -251,12 +261,12 @@
       <workItem from="1511313376145" duration="4323000" />
       <workItem from="1511918025369" duration="7190000" />
       <workItem from="1512522833842" duration="7143000" />
-      <workItem from="1513127662799" duration="2339000" />
+      <workItem from="1513127662799" duration="3423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50307000" />
+    <option name="totallyTimeSpent" value="51391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
@@ -624,14 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -652,14 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pweb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1013">
-          <caret line="53" column="97" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="97" />
           <folding />
         </state>
       </provider>
@@ -690,21 +684,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pweb-1.html">
+    <entry file="file://$PROJECT_DIR$/pweb2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="-1634">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pweb2.html">
+    <entry file="file://$PROJECT_DIR$/pweb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2725">
-          <caret line="109" column="33" lean-forward="false" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="1013">
+          <caret line="53" column="97" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pweb-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
