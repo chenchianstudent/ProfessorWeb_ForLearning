@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
         .row.content {
-            height: 1500px
+            height: 600px;
         }
 
         /* Set gray background color and 100% height */
         .sidenav {
-            background-color: #f1f1f1;
+            background-color: #fffe82;
             height: 100%;
         }
 
@@ -40,10 +42,37 @@
     </style>
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Min-Shiang's Web</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li ><a href="http://120.108.117.245/~105021007/pweb2">首頁</a></li>
+                <li class="active"><a href="http://120.108.117.245/~105021007/pweb-1">簡歷</a></li>
+                <li><a href="http://120.108.117.245/~105021007/pweb3">學術</a></li>
+                <li><a href="http://120.108.117.245/~105021007/pweb4">著作</a></li>
+                <li><a href="student.html">學生</a></li>
+                <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://120.108.117.245/~105021007/login"><span class="glyphicon glyphicon-log-in"></span>
+                    Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<div class="container-fluid">
+<div class="container-fluid" align="center">
     <div class="row content">
         <div class="col-sm-3 sidenav">
+            <h5> </h5>
             <img src="990102449.jpg" width="150" height="204" alt="黃明祥教授">
             <h4>黃明祥</h4>
             <ul class="nav nav-pills nav-stacked">
@@ -58,7 +87,36 @@
 
             </div>
         </div>
-        <p>poi</p>
+        <div align="center">
+            <h3>基本資料</h3>
+            <ul>
+                <li>姓名：黃明祥／Min-Shiang Hwang</li>
+                <li>任職單位：資訊工程學系 講座教授</li>
+                <li>E-mail：<a href="mailto:mshwang@asia.edu.tw">mshwang@asia.edu.tw</a></li>
+            </ul>
+            <h3>學歷</h3>
+            <ul>
+                <li>交通大學資訊工程與科學博士</li>
+                <li>清華大學工業工程碩士</li>
+                <li>台北工專電子工程</li>
+            </ul>
+            <h3>經歷</h3>
+            <ul>
+                <li>亞洲大學資工系講座教授(2011-至今)</li>
+                <li>亞洲大學資訊學院院長(2011-2015)</li>
+                <li>中興大學資訊管理學系特聘教授(2007-2011)</li>
+                <li>中興大學資訊管理學系教授兼系主任(2003-2009)</li>
+            </ul>
+            <h3>專長</h3>
+            <ul>
+                <li>密碼學</li>
+                <li>資訊網路與網路安全</li>
+                <li>隱像學</li>
+                <li>行動通信與計算</li>
+                <li>電子商務</li>
+            </ul>
+            <p>&nbsp;</p>
+        </div>
 
     </div>
 </div>
