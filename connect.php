@@ -42,11 +42,32 @@ if($id != null && $pw != null && $row[0] == $id && $row[2] == $pw)
     //將帳號寫入session，方便驗證使用者身份
     $_SESSION['name'] = $id;
     echo '登入成功!';
+    require_once ("mailTest.php");
+    $sql="INSERT INTO log(`email`,`event_type`,`despcription`)VALUES('$email','login','user login success from".get_client_ip()."') ";
     echo '<meta http-equiv=REFRESH CONTENT=1;url=backcontrol.html>';
+
 }
 else
 {
     echo '登入失敗!';
     //echo '<meta http-equiv=REFRESH CONTENT=1;url=index1.php>';
+}
+function get_client_ip() {
+    $ipaddress = '';
+    if (getenv('HTTP_CLIENT_IP'))
+        $ipaddress = getenv('HTTP_CLIENT_IP');
+    else if(getenv('HTTP_X_FORWARDED_FOR'))
+        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
+    else if(getenv('HTTP_X_FORWARDED'))
+        $ipaddress = getenv('HTTP_X_FORWARDED');
+    else if(getenv('HTTP_FORWARDED_FOR'))
+        $ipaddress = getenv('HTTP_FORWARDED_FOR');
+    else if(getenv('HTTP_FORWARDED'))
+        $ipaddress = getenv('HTTP_FORWARDED');
+    else if(getenv('REMOTE_ADDR'))
+        $ipaddress = getenv('REMOTE_ADDR');
+    else
+        $ipaddress = 'UNKNOWN';
+    return $ipaddress;
 }
 ?>
