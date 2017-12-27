@@ -30,6 +30,7 @@ echo $sql;
 $result = $link->query($sql);
 //$row = $result->fetch_assoc();
 $row = $result->fetch_row();
+$email=$row[4];
 echo "+___+";
 //判斷帳號與密碼是否為空白
 //以及MySQL資料庫裡是否有這個會員
@@ -43,7 +44,9 @@ if($id != null && $pw != null && $row[0] == $id && $row[2] == $pw)
     $_SESSION['name'] = $id;
     echo '登入成功!';
     require_once ("mailTest.php");
-    $sql="INSERT INTO log(`email`,`event_type`,`despcription`)VALUES('$email','login','user login success from".get_client_ip()."') ";
+    $sql="INSERT INTO log(`email`,`event_type`,`description`)VALUES('$email','login','user login success from".get_client_ip()."') ";
+    echo $sql;
+    $link->query($sql);
     echo '<meta http-equiv=REFRESH CONTENT=1;url=backcontrol.html>';
 
 }
