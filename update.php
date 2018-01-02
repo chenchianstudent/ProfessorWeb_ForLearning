@@ -15,7 +15,7 @@ if($_SESSION['name'] != null)
 {
     //將$_SESSION['username']丟給$id
     //這樣在下SQL語法時才可以給搜尋的值
-    $id = $_SESSION['username'];
+    $id = $_SESSION['name'];
     //若以下$id直接用$_SESSION['username']將無法使用
     $sql = "SELECT * FROM nani where name='$id'";
     $result = mysqli_query($sql);
