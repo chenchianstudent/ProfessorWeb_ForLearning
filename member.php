@@ -14,7 +14,7 @@ echo '<a href="logout.php">登出</a>  <br><br>';
 //此判斷為判定觀看此頁有沒有權限
 //說不定是路人或不相關的使用者
 //因此要給予排除
-if($_SESSION['username'] != null)
+if($_SESSION['name'] != null)
 {
     echo '<a href="register.php">新增</a>    ';
     echo '<a href="update.php">修改</a>    ';
