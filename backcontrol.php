@@ -1,3 +1,10 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: chentest1605
+ * Date: 2018/1/2
+ * Time: 下午 05:53
+ */?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -71,7 +78,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://120.108.117.245/~105021007/logout.php"><span class="glyphicon glyphicon-log-in"></span>
-                    Logout</a></li>
+                        Logout</a></li>
             </ul>
         </div>
     </div>
@@ -114,3 +121,4 @@
 
 </body>
 </html>
+

@@ -47,7 +47,7 @@ if($id != null && $pw != null && $row[0] == $id && $row[2] == $pw)
     $sql="INSERT INTO log(`email`,`event_type`,`description`)VALUES('$email','login','user login success from".get_client_ip()."') ";
     echo $sql;
     $link->query($sql);
-    echo '<meta http-equiv=REFRESH CONTENT=1;url=backcontrol.html>';
+    echo '<meta http-equiv=REFRESH CONTENT=1;url=backcontrol.php>';
 
 }
 else
