@@ -87,19 +87,25 @@
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <p><a href="#">poi</a></p>
+            <p><a href="allmember.php">poi</a></p>
             <p><a href="#">poi1</a></p>
             <p><a href="#">poi2</a></p>
         </div>
         <div class="col-sm-8 text-left">
             <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
+            <button type="submit"><a href="update.php">修改名字</a></button>
             <p>多數人的失敗不是因為他們的無能，而是他的心志不專一</p>
             <hr>
-            <h3><span style="font-size: 1.2em">聯絡方式</span></h3>
-            <p><span style="font-size:1em ">●tel:+886-4-23323456  分機：1864</span></p>
-            <p><span style="font-size:1em ">●Office：I420</span></p>
-            <p><span style="font-size:1em ">●E-mail:mshwang@asia.edu.tw</span></p>
-            <p>沒人接電話你家的事</p>
+            <?php
+            mysqli_connect("localhost","105021007","yV5X55K0");//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+            mysqli_select_db("nani");//我要從member這個資料庫撈資料
+            mysqli_query("set names utf8");//設定utf8 中文字才不會出現亂碼
+            $data=mysqli_query("select * from nani");//從member中選取全部(*)的資料
+            $rs=mysqli_fetch_row($data);//擷取資料的第一行，此句打兩次就會出現第二行，打三次出現第三行...
+            echo $rs[1]//將 $rs的第一欄顯示在畫面上
+            ?>
+
+
 
         </div>
         <div class="col-sm-2 sidenav">

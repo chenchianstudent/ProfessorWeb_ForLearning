@@ -21,8 +21,13 @@ if($_SESSION['name'] != null)
     echo '<a href="delete.php">刪除</a>  <br><br>';
 
     //將資料庫裡的所有會員資料顯示在畫面上
-    $sql = "SELECT * FROM member_table";
+    $sql = "SELECT * FROM nani";
+    echo $sql;
     $result = mysqli_query($sql);
+    echo $result;
+    if($result==null){
+    echo "no";
+    }
     while($row = mysqli_fetch_row($result))
     {
         echo "$row[0] - 名字(帳號)：$row[1], " .

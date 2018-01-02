@@ -11,15 +11,15 @@
 <?php
 include("mysql_connect.inc.php");
 
-if($_SESSION['username'] != null)
+if($_SESSION['name'] != null)
 {
     //將$_SESSION['username']丟給$id
     //這樣在下SQL語法時才可以給搜尋的值
     $id = $_SESSION['name'];
     //若以下$id直接用$_SESSION['username']將無法使用
-    $sql = "SELECT * FROM member_table where username='$id'";
-    $result = mysql_query($sql);
-    $row = mysql_fetch_row($result);
+    $sql = "SELECT * FROM member_table where name='$id'";
+    $result = mysqli_query($sql);
+    $row = mysqli_fetch_row($result);
 
     echo "<form name=\"form\" method=\"post\" action=\"update_finish.php\">";
     echo "帳號：<input type=\"text\" name=\"id\" value=\"$row[1]\" />(此項目無法修改) <br>";
