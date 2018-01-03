@@ -30,7 +30,7 @@ if($_SESSION['name'] != null && $pw != null && $pw2 != null && $pw == $pw2)
     if(mysqli_query($link,$sql))
     {
         echo '修改成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=update.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
     }
     else
     {
