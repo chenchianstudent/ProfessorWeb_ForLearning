@@ -12,8 +12,10 @@
 include("mysql_connect.inc.php");
 
 $id = $_POST['id'];
+//$pw = sha1($_POST['pw']);
+//$pw2 =sha1( $_POST['pw2']);
 $pw = $_POST['pw'];
-$pw2 = $_POST['pw2'];
+$pw2 =$_POST['pw2'];
 $telephone = $_POST['telephone'];
 $address = $_POST['address'];
 //$other = $_POST['other'];
@@ -23,18 +25,18 @@ if($_SESSION['name'] != null && $pw != null && $pw2 != null && $pw == $pw2)
     $id = $_SESSION['name'];
 
     //更新資料庫資料語法
-    $sql = "update nani set pw=$pw, phone=$telephone, email=$address, where name='$id'";
+    $sql = "update nani set pw='$pw', phone='$telephone', email='$address' where id='$id'";
 
-    if(mysqli_query($sql))
+    if(mysqli_query($link,$sql))
     {
         echo '修改成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=update.php>';
     }
     else
     {
         echo '修改失敗!';
         echo $sql;
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+//        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
     }
 }
 /*else

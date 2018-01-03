@@ -5,6 +5,11 @@
  * Date: 2018/1/2
  * Time: 下午 05:53
  */?>
+ <?php
+session_start();
+include("mysql_connect.inc.php");
+if($_SESSION['name'] != null){
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -69,9 +74,9 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="*">控制台</a></li>
+                <li class="active"><a href="backcontrol.php">控制台</a></li>
                 <li><a href="http://120.108.117.245/~105021007/pweb-1">簡歷</a></li>
-                <li><a href="http://120.108.117.245/~105021007/pweb3">學術</a></li>
+                <li><a href="control3.php">學術</a></li>
                 <li><a href="http://120.108.117.245/~105021007/pweb4">著作</a></li>
                 <li><a href="#">學生</a></li>
                 <li><a href="#">常用連結</a></li>
@@ -127,4 +132,10 @@
 
 </body>
 </html>
+<?php
+}else{
+    echo '您無權限觀看此頁面!';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=login.html>';
 
+}
+?>
