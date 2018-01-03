@@ -1380,7 +1380,7 @@ if($_SESSION['name'] != null){
     <?php
 }else{
     echo '您無權限觀看此頁面!';
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=login.html>';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=pweb2.php>';
 
 }
 ?>
