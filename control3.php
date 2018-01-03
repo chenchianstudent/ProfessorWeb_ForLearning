@@ -116,16 +116,16 @@ if($_SESSION['name'] != null){
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="backcontrol.php">首頁</a></li>
+                <li><a href="backcontrol.php">控制台</a></li>
                 <li><a href="http://120.108.117.245/~105021007/pweb-1">簡歷</a></li>
                 <li class="active"><a href="control3.php">學術</a></li>
-                <li><a href="http://120.108.117.245/~105021007/pweb4">著作</a></li>
+                <li><a href="control4.php">著作</a></li>
                 <li><a href="student.html">學生</a></li>
                 <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://120.108.117.245/~105021007/login"><span class="glyphicon glyphicon-log-in"></span>
-                        Login</a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>
+                        Logout</a></li>
             </ul>
         </div>
     </div>

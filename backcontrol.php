@@ -77,7 +77,7 @@ if($_SESSION['name'] != null){
                 <li class="active"><a href="backcontrol.php">控制台</a></li>
                 <li><a href="http://120.108.117.245/~105021007/pweb-1">簡歷</a></li>
                 <li><a href="control3.php">學術</a></li>
-                <li><a href="http://120.108.117.245/~105021007/pweb4">著作</a></li>
+                <li><a href="control4.php">著作</a></li>
                 <li><a href="#">學生</a></li>
                 <li><a href="#">常用連結</a></li>
             </ul>
@@ -92,7 +92,7 @@ if($_SESSION['name'] != null){
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <p><a href="allmember.php">poi</a></p>
+            <p><a href="allmember.php">所有權限人員</a></p>
             <p><a href="#">poi1</a></p>
             <p><a href="#">poi2</a></p>
         </div>
@@ -102,13 +102,14 @@ if($_SESSION['name'] != null){
             <p>多數人的失敗不是因為他們的無能，而是他的心志不專一</p>
             <hr>
             <?php
-            mysqli_connect("localhost","105021007","yV5X55K0");//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
-            mysqli_select_db("nani");//我要從member這個資料庫撈資料
-            mysqli_query("set names utf8");//設定utf8 中文字才不會出現亂碼
-            $data=mysqli_query("select * from nani");//從member中選取全部(*)的資料
+            mysqli_connect("localhost","105021007","#yV5X55K0");//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+            mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+            mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+            $data=mysqli_query($link,"select * from nani");//從member中選取全部(*)的資料
             $rs=mysqli_fetch_row($data);//擷取資料的第一行，此句打兩次就會出現第二行，打三次出現第三行...
             echo $rs[1]//將 $rs的第一欄顯示在畫面上
             ?>
+
 
 
 

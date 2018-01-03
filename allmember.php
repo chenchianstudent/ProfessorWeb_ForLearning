@@ -1,13 +1,13 @@
 <?php
 include("mysql_connect.inc.php");
 mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
-mysqli_select_db("nani");//我要從member這個資料庫撈資料
+mysqli_select_db("105021007");//我要從member這個資料庫撈資料
 $poi=mysqli_select_db("nani");//我要從member這個資料庫撈資料
 if($poi==null){
     echo '>____<';
 }
-mysqli_query("set names utf8");//設定utf8 中文字才不會出現亂碼
-$data=mysqli_query("SELECT * FROM nani");//從member中選取全部(*)的資料
+mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+$data=mysqli_query($link,"SELECT * FROM nani");//從member中選取全部(*)的資料
 if(!$data){
 
     echo '沒有連接到';
@@ -35,7 +35,7 @@ if(!$data){
     </tr>
 
     <?php
-    for($i=0;$i<=mysqli_num_rows($data);$i++)
+    for($i=1;$i<=mysqli_num_rows($data);$i++)
     { $rows=mysqli_fetch_row($data);
         ?><tr>
         <td><?php echo $rows[0]?></td>
