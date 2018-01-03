@@ -18,7 +18,7 @@ if($_SESSION['name'] != null)
     $id = $_SESSION['name'];
     //若以下$id直接用$_SESSION['username']將無法使用
     $sql = "SELECT * FROM nani where id='$id'";
-   
+
 
     $result = mysqli_query($link,$sql);
 

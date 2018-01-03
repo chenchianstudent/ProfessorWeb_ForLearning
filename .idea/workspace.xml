@@ -58,10 +58,10 @@
         <entry file="file://$PROJECT_DIR$/update.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
-              <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <caret line="26" column="77" lean-forward="false" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
               <folding>
-                <marker date="1514951914960" expanded="true" signature="404:432" ph="SELECT * FRO... nani" />
-                <marker date="1514951914960" expanded="true" signature="404:437" ph="SELECT * FRO... nani" />
+                <marker date="1514952077817" expanded="true" signature="404:432" ph="SELECT * FRO... nani" />
+                <marker date="1514952077817" expanded="true" signature="404:437" ph="SELECT * FRO... nani" />
               </folding>
             </state>
           </provider>
@@ -303,16 +303,15 @@
       <workItem from="1514337191016" duration="7976000" />
       <workItem from="1514439017608" duration="330000" />
       <workItem from="1514873326005" duration="12285000" />
-      <workItem from="1514941918261" duration="9655000" />
+      <workItem from="1514941918261" duration="9821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97090000" />
+    <option name="totallyTimeSpent" value="97256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15364583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09583333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -777,10 +776,10 @@
     <entry file="file://$PROJECT_DIR$/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <caret line="26" column="77" lean-forward="false" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
           <folding>
-            <marker date="1514951914960" expanded="true" signature="404:432" ph="SELECT * FRO... nani" />
-            <marker date="1514951914960" expanded="true" signature="404:437" ph="SELECT * FRO... nani" />
+            <marker date="1514952077817" expanded="true" signature="404:432" ph="SELECT * FRO... nani" />
+            <marker date="1514952077817" expanded="true" signature="404:437" ph="SELECT * FRO... nani" />
           </folding>
         </state>
       </provider>
