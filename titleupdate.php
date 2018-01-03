@@ -17,7 +17,7 @@ if($_SESSION['name'] != null)
     //這樣在下SQL語法時才可以給搜尋的值
     //$id = $_SESSION['name'];
     //若以下$id直接用$_SESSION['username']將無法使用
-    $sql = "SELECT * FROM titlename where 1";
+    $sql = "SELECT * FROM titlename2 where 1";
     $result = mysqli_query($link,$sql);
     $row = mysqli_fetch_row($result);
     echo "<form name=\"form\" method=\"post\" action=\"titleupdate_finish.php\">";

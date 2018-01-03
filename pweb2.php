@@ -6,11 +6,12 @@
  * Time: 下午 07:53
  */?>
 <?php
+include("mysql_connect.inc.php");
 mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
 mysqli_select_db("105021007");//我要從member這個資料庫撈資料
-$poi=mysqli_select_db("titlename");//我要從member這個資料庫撈資料
+$poi=mysqli_select_db("titlename2");//我要從member這個資料庫撈資料
 mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
-$data=mysqli_query($link,"SELECT * FROM titlename");//從member中選取全部(*)的資料
+$data=mysqli_query($link,"SELECT * FROM titlename2");//從member中選取全部(*)的資料
 $rows=mysqli_fetch_row($data);
 ?>
 
@@ -102,7 +103,6 @@ $rows=mysqli_fetch_row($data);
         </div>
         <div class="col-sm-8 text-left">
             <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
-            <p>多數人的失敗不是因為他們的無能，而是他的心志不專一</p>
             <?php echo $rows[1]?>
             <hr>
             <h3><span style="font-size: 1.2em">聯絡方式</span></h3>
