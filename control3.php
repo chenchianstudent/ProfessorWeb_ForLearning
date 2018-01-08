@@ -10,6 +10,15 @@ session_start();
 include("mysql_connect.inc.php");
 if($_SESSION['name'] != null){
 ?>
+    <?php
+    include("mysql_connect.inc.php");
+    mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+    mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+    $poi=mysqli_select_db("studentsproject");//我要從member這個資料庫撈資料
+    mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+    $data=mysqli_query($link,"SELECT * FROM studentsproject");//從member中選取全部(*)的資料
+
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,7 +121,7 @@ if($_SESSION['name'] != null){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Min-Shiang's Web</a>
+            <a class="navbar-brand" href="backcontrol.php">Min-Shiang's Web</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -153,25 +162,32 @@ if($_SESSION['name'] != null){
                     <p></p>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
-
+                            <?php
+                            for($i=1;$i<=mysqli_num_rows($data);$i++)
+                            { $rows=mysqli_fetch_row($data);
+                            ?>
                             <tbody><tr class="odd">
-                                <td width="5%">1</td>
-                                <td>學年度:105<br>計畫名稱:鳥類檢索雲端系統的研發<br>指導教授:資工學系                                                            &nbsp;黃明祥                             <br>學生姓名:林宇智<br></td>
+                                <td width="5%"><?php echo $rows[0]?></td>
+                                <td>學年度:<?php echo $rows[2]?><br>計畫名稱:<?php echo $rows[1]?><br>指導教授: <?php echo $rows[3]?><br>學生姓名:<?php echo $rows[4]?><br></td>
                             </tr>
-
-                            <tr>
-                                <td width="5%">2</td>
-                                <td>學年度:103<br>計畫名稱:使用者身份識別及其雲端應用之研究與開發<br>指導教授:資工系                                                             &nbsp;黃明祥                             <br>學生姓名:許良瑋<br></td>
-                            </tr>
-
-                            <tr class="odd">
-                                <td width="5%">3</td>
-                                <td>學年度:104<br>計畫名稱:中草藥葉片檢索雲端系統的研發<br>指導教授:資工系                                                             &nbsp;黃明祥                             <br>學生姓名:林依俊<br></td>
-                            </tr>
+                            <?php }?>
 
                             </tbody></table>
-                        <p>
-                            &nbsp;</p>
+                        <p>修改</p>
+                        <?php
+                        $sql = "SELECT * FROM studentsproject where number";
+                        $result = mysqli_query($link,$sql);
+                        $row = mysqli_fetch_row($result);
+                        echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate＿finish.php\">";
+                        echo "編號：<input type=\"text\" name=\"id\" value=\"$row[0]\" /><br>";
+                        echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"$row[1]\" /> <br>";
+                        echo "學年度：<input type=\"text\" name=\"telephone\" value=\"$row[2]\" /> <br>";
+                        echo "教授名稱：<input type=\"text\" name=\"address\" value=\"$row[3]\" /> <br>";
+                        echo "學生姓名：<input type=\"text\" name=\"other\" value=\"$row[4]\" /> <br>";
+                        echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                        echo "</form>";
+
+                        ?>
                     </div>
 
                 </div>

@@ -111,7 +111,7 @@ if($_SESSION['name'] != null){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Min-Shiang's Web</a>
+            <a class="navbar-brand" href="backcontrol.php">Min-Shiang's Web</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">

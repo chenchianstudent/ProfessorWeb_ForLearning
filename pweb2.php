@@ -81,7 +81,7 @@ $rows=mysqli_fetch_row($data);
             <ul class="nav navbar-nav">
                 <li class="active"><a href="pweb2.php">首頁</a></li>
                 <li><a href="http://120.108.117.245/~105021007/pweb-1">簡歷</a></li>
-                <li><a href="http://120.108.117.245/~105021007/pweb3">學術</a></li>
+                <li><a href="pweb3.php">學術</a></li>
                 <li><a href="http://120.108.117.245/~105021007/pweb4">著作</a></li>
                 <li><a href="http://120.108.117.245/~105021007/student">學生</a></li>
                 <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
@@ -97,9 +97,12 @@ $rows=mysqli_fetch_row($data);
 <div class="container-fluid text-center">
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <p><a href="#">poi</a></p>
-            <p><a href="#">poi1</a></p>
-            <p><a href="#">poi2</a></p>
+            <div class="well">
+                <img src="mshwang.jpg" width="150" height="204" alt="黃明祥教授">
+
+            </div>
+            <p style="font-weight:bold;font-size: 1.5em ">黃明祥教授</p>
+            <p>專任講授教授</p>
         </div>
         <div class="col-sm-8 text-left">
             <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
@@ -113,12 +116,9 @@ $rows=mysqli_fetch_row($data);
 
         </div>
         <div class="col-sm-2 sidenav">
-            <div class="well">
-                <img src="mshwang.jpg" width="150" height="204" alt="黃明祥教授">
-
-            </div>
-            <p style="font-weight:bold;font-size: 1.5em ">黃明祥教授</p>
-            <p>專任講授教授</p>
+            <p><a href="https://www.facebook.com/mshwang">facebook</a></p>
+            <p><a href="#">poi1</a></p>
+            <p><a href="#">poi2</a></p>
 
         </div>
     </div>

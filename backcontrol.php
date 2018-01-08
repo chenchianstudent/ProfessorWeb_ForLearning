@@ -77,7 +77,7 @@ if($_SESSION['name'] != null){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Min-Shiang's Web</a>
+            <a class="navbar-brand" href="backcontrol.php">Min-Shiang's Web</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -101,7 +101,7 @@ if($_SESSION['name'] != null){
         <div class="col-sm-2 sidenav">
             <p><a href="allmember.php">所有權限人員</a></p>
             <p><a href="member.php">修改權限人員</a></p>
-            <p><a href="#">poi2</a></p>
+            <p><a href="test.php">poi2</a></p>
         </div>
         <div class="col-sm-8 text-left">
             <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
