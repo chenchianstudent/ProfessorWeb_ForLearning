@@ -1,15 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 2018/1/3
- * Time: 上午 11:32
- */?>
-<?php
-session_start();
-include("mysql_connect.inc.php");
-if($_SESSION['name'] != null){
-?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -103,6 +93,11 @@ if($_SESSION['name'] != null){
     </style>
 </head>
 <body>
+<?php
+session_start();
+include("mysql_connect.inc.php");
+if($_SESSION['name'] != null){
+?>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -116,7 +111,7 @@ if($_SESSION['name'] != null){
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="backcontrol.php">控制台</a></li>
-                <li><a href="http://120.108.117.245/~105021007/pweb-1">簡歷</a></li>
+                <li><a href="pweb-1.php">簡歷</a></li>
                 <li><a href="control3.php">學術</a></li>
                 <li class="active"><a href="control4.php">著作</a></li>
                 <li><a href="student.html">學生</a></li>
@@ -130,7 +125,7 @@ if($_SESSION['name'] != null){
     </div>
 </nav>
 
-<div class="container" style="background-color: #adffad;width: 100%;height: 100%" align="center">
+<div class="container" style="background-color: #ffa313;width: 100%;height: 100%" align="center">
     <h2><span style="font-size:1.8em "><b>著作</b></span></h2>
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">期刊論文／Journal Papers</a></li>
@@ -1372,7 +1367,7 @@ if($_SESSION['name'] != null){
     </div>
 </div>
 <footer class="container-fluid text-center">
-    <p>Powerd by 絕對不是陳麒安 但分數請打給陳麒安</p>
+    <p>Powerd by 絕對不是陳麒安 注意!!!你正在管理員介面</p>
     <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
 </footer>
 </body>

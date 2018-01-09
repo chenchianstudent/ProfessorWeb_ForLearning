@@ -3,43 +3,39 @@
  * Created by PhpStorm.
  * User: USER
  * Date: 2017/11/22
- * Time: 上午 10:47
+ * Time: 上午 10:43
  */
 ?>
 <?php session_start(); ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 include("mysql_connect.inc.php");
-
 $id = $_POST['id'];
 $pw = $_POST['pw'];
+$pw2 =$_POST['pw2'];
 $telephone = $_POST['telephone'];
 $address = $_POST['address'];
 $other = $_POST['other'];
-//紅色字體為判斷密碼是否填寫正確
-if($_SESSION['name'] != null && $id != null)
+//判斷帳號密碼是否為空值
+//確認密碼輸入的正確性
+if($id != null)
 {
-    $id = $_SESSION['name'];
-
-    //更新資料庫資料語法
-    $sql = "update studentsproject set projectname='$pw', annual='$telephone', professor='$address',studentname='$other' where number='$id'";
-
+    //新增資料進資料庫語法
+    $sql = "insert into studentsproject (number, projectname, annual, professor,studentname) values ('$id','$pw','$telephone', '$address', '$other')";
     if(mysqli_query($link,$sql))
     {
-        echo '修改成功!';
+        echo '新增成功!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
     }
     else
     {
-        echo '修改失敗!';
-        echo $sql;
-//        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+        echo '新增失敗!';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
     }
 }
-/*else
+else
 {
     echo '您無權限觀看此頁面!';
     echo '<meta http-equiv=REFRESH CONTENT=2;url=index1.php>';
 }
 ?>
-*/

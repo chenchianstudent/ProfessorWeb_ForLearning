@@ -94,10 +94,10 @@ $rows=mysqli_fetch_row($data);
     </div>
 </nav>
 
-<div class="container-fluid text-center">
+<div class="container-fluid text-center" style="background-color: #d0ffaa">
     <div class="row content">
-        <div class="col-sm-2 sidenav">
-            <div class="well">
+        <div class="col-sm-2 sidenav" style="background-color: #9effd0">
+            <div class="well"  style="background-color: #c8e3ff">
                 <img src="mshwang.jpg" width="150" height="204" alt="黃明祥教授">
 
             </div>
@@ -115,11 +115,12 @@ $rows=mysqli_fetch_row($data);
 
 
         </div>
-        <div class="col-sm-2 sidenav">
+        <div class="col-sm-2 sidenav" style="background-color: #9effd0">
+            <div class="well" style="background-color: #fffaad">
             <p><a href="https://www.facebook.com/mshwang">facebook</a></p>
             <p><a href="#">poi1</a></p>
             <p><a href="#">poi2</a></p>
-
+            </div>
         </div>
     </div>
 </div>

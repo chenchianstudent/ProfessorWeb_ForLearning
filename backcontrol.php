@@ -82,7 +82,7 @@ if($_SESSION['name'] != null){
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="backcontrol.php">控制台</a></li>
-                <li><a href="http://120.108.117.245/~105021007/pweb-1">簡歷</a></li>
+                <li><a href="pweb-1.php">簡歷</a></li>
                 <li><a href="control3.php">學術</a></li>
                 <li><a href="control4.php">著作</a></li>
                 <li><a href="#">學生</a></li>
@@ -96,12 +96,12 @@ if($_SESSION['name'] != null){
     </div>
 </nav>
 
-<div class="container-fluid text-center">
+<div class="container-fluid text-center" style="background-color: #ffe78c">
     <div class="row content">
-        <div class="col-sm-2 sidenav">
-            <p><a href="allmember.php">所有權限人員</a></p>
-            <p><a href="member.php">修改權限人員</a></p>
-            <p><a href="test.php">poi2</a></p>
+        <div class="col-sm-2 sidenav" style="background-color: #a7ff97">
+            <img src="mshwang.jpg" width="150" height="204" alt="黃明祥教授">
+            <p style="font-weight:bold;font-size: 1.5em ">黃明祥教授</p>
+            <p>專任講授教授</p>
         </div>
         <div class="col-sm-8 text-left">
             <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
@@ -116,20 +116,21 @@ if($_SESSION['name'] != null){
 
 
         </div>
-        <div class="col-sm-2 sidenav">
-            <div class="well">
-                <img src="mshwang.jpg" width="150" height="204" alt="黃明祥教授">
+        <div class="col-sm-2 sidenav"style="background-color: #a7ff97">
+            <div class="well" style="background-color: #9afff0">
 
+                <p><a href="allmember.php">所有權限人員</a></p>
+                <p><a href="member.php">修改權限人員</a></p>
+                <p><a href="test.php">poi2</a></p>
             </div>
-            <p style="font-weight:bold;font-size: 1.5em ">黃明祥教授</p>
-            <p>專任講授教授</p>
+
 
         </div>
     </div>
 </div>
 
 <footer class="container-fluid text-center">
-    <p>Powerd by 絕對不是陳麒安 但分數請打給陳麒安</p>
+    <p>Powerd by 絕對不是陳麒安 注意!!!你正在管理員介面</p>
     <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
 </footer>
 
