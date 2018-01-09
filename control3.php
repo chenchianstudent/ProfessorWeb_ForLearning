@@ -107,7 +107,7 @@ if($_SESSION['name'] != null){
         .tb_main tr:hover th,
         .tb_main tr.odd:hover th {
             color: #333;
-            background: #ddd59b;
+            background: #fffe82;
         }
 
     </style>
@@ -166,28 +166,85 @@ if($_SESSION['name'] != null){
                             for($i=1;$i<=mysqli_num_rows($data);$i++)
                             { $rows=mysqli_fetch_row($data);
                             ?>
-                            <tbody><tr class="odd">
+                            <tbody><tr >
                                 <td width="5%"><?php echo $rows[0]?></td>
                                 <td>學年度:<?php echo $rows[2]?><br>計畫名稱:<?php echo $rows[1]?><br>指導教授: <?php echo $rows[3]?><br>學生姓名:<?php echo $rows[4]?><br></td>
                             </tr>
                             <?php }?>
 
                             </tbody></table>
-                        <p>修改</p>
-                        <?php
-                        $sql = "SELECT * FROM studentsproject where number";
-                        $result = mysqli_query($link,$sql);
-                        $row = mysqli_fetch_row($result);
-                        echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate＿finish.php\">";
-                        echo "編號：<input type=\"text\" name=\"id\" value=\"$row[0]\" /><br>";
-                        echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"$row[1]\" /> <br>";
-                        echo "學年度：<input type=\"text\" name=\"telephone\" value=\"$row[2]\" /> <br>";
-                        echo "教授名稱：<input type=\"text\" name=\"address\" value=\"$row[3]\" /> <br>";
-                        echo "學生姓名：<input type=\"text\" name=\"other\" value=\"$row[4]\" /> <br>";
-                        echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
-                        echo "</form>";
+                        <table  width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                            <tbody>
+                            <tr class="odd">
+                                <td width="5%">修改</td>
+                                <td>
+                                    <?php
+                                    $sql = "SELECT * FROM studentsproject where number";
+                                    $result = mysqli_query($link,$sql);
+                                    $row = mysqli_fetch_row($result);
+                                    echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate＿finish.php\">";
+                                    echo "編號：<input type=\"text\" name=\"id\" value=\"$row[0]\" /><br>";
+                                    echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"$row[1]\" /> <br>";
+                                    echo "學年度：<input type=\"text\" name=\"telephone\" value=\"$row[2]\" /> <br>";
+                                    echo "教授名稱：<input type=\"text\" name=\"address\" value=\"$row[3]\" /> <br>";
+                                    echo "學生姓名：<input type=\"text\" name=\"other\" value=\"$row[4]\" /> <br>";
+                                    echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                    echo "</form>";
 
-                        ?>
+                                    ?>
+                                </td>
+                            </tr>
+                            <tr class="odd">
+                                <td width="5%">新增</td>
+                                <td>
+                                    <?php
+                                    $sql = "SELECT * FROM studentsproject where number";
+                                    $result = mysqli_query($link,$sql);
+                                    $row = mysqli_fetch_row($result);
+                                    echo "<form name=\"form\" method=\"post\" action=\"*.php\">";
+                                    echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                                    echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+                                    echo "學年度：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+                                    echo "教授名稱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+                                    echo "學生姓名：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
+                                    echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                    echo "</form>";
+
+                                    ?>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+<!--                        <p>修改</p>-->
+<!--                        --><?php
+//                        $sql = "SELECT * FROM studentsproject where number";
+//                        $result = mysqli_query($link,$sql);
+//                        $row = mysqli_fetch_row($result);
+//                        echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate＿finish.php\">";
+//                        echo "編號：<input type=\"text\" name=\"id\" value=\"$row[0]\" /><br>";
+//                        echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"$row[1]\" /> <br>";
+//                        echo "學年度：<input type=\"text\" name=\"telephone\" value=\"$row[2]\" /> <br>";
+//                        echo "教授名稱：<input type=\"text\" name=\"address\" value=\"$row[3]\" /> <br>";
+//                        echo "學生姓名：<input type=\"text\" name=\"other\" value=\"$row[4]\" /> <br>";
+//                        echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+//                        echo "</form>";
+//
+//                        ?>
+<!--                        <p>新增</p>-->
+<!--                        --><?php
+//                        $sql = "SELECT * FROM studentsproject where number";
+//                        $result = mysqli_query($link,$sql);
+//                        $row = mysqli_fetch_row($result);
+//                        echo "<form name=\"form\" method=\"post\" action=\"*.php\">";
+//                        echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+//                        echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+//                        echo "學年度：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+//                        echo "教授名稱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+//                        echo "學生姓名：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
+//                        echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+//                        echo "</form>";
+//
+//                        ?>
                     </div>
 
                 </div>
