@@ -15,13 +15,20 @@ if($_SESSION['name'] != null)
 {
     //將$_SESSION['username']丟給$id
     //這樣在下SQL語法時才可以給搜尋的值
-    //$id = $_SESSION['name'];
+    $id = $_POST['id'];
     //若以下$id直接用$_SESSION['username']將無法使用
-    $sql = "SELECT * FROM titlename2 where 1";
+    $sql = "SELECT * FROM student where number='$id'";
+
+
     $result = mysqli_query($link,$sql);
+
     $row = mysqli_fetch_row($result);
-    echo "<form name=\"form\" method=\"post\" action=\"titleupdate_finish.php\">";
-    echo "名言：<input type=\"text\" name=\"pw\" value=\"$row[1]\" /> <br>";
+    echo "<form name=\"form\" method=\"post\" action=\"studentupdate_finish.php\">";
+    echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" /><br>";
+    echo "學生姓名：<input type=\"text\" name=\"pw\" value=\"$row[1]\" /> <br>";
+    echo "學年度：<input type=\"text\" name=\"telephone\" value=\"$row[2]\" /> <br>";
+    echo "電子信箱：<input type=\"text\" name=\"address\" value=\"$row[3]\" /> <br>";
+    echo "連絡電話：<input type=\"text\" name=\"other\" value=\"$row[4]\" /> <br>";
     echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
     echo "</form>";
 }

@@ -29,13 +29,12 @@ if($_SESSION['name'] != null)
     {
         echo '修改失敗!';
         echo $sql;
-//        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
     }
 }
-/*else
+else
 {
     echo '您無權限觀看此頁面!';
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=index1.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=pweb2.php>';
 }
 ?>
-*/

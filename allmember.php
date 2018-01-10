@@ -1,4 +1,11 @@
 <?php
+session_start();
+include("mysql_connect.inc.php");
+if($_SESSION['name'] != null){
+    ?>
+
+
+<?php
 include("mysql_connect.inc.php");
 mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
 mysqli_select_db("105021007");//我要從member這個資料庫撈資料
@@ -44,3 +51,10 @@ $data=mysqli_query($link,"SELECT * FROM nani");//從member中選取全部(*)的�
 </table>
 </body>
 </html>
+<?php
+}else{
+    echo '您無權限觀看此頁面!';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=pweb2.php>';
+
+}
+?>

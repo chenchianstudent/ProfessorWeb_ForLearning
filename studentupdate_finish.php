@@ -6,37 +6,32 @@
  * Time: 上午 10:47
  */
 ?>
+
 <?php session_start(); ?>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 include("mysql_connect.inc.php");
 
 $id = $_POST['id'];
-//$pw = sha1($_POST['pw']);
-//$pw2 =sha1( $_POST['pw2']);
 $pw = $_POST['pw'];
-$pw2 =$_POST['pw2'];
 $telephone = $_POST['telephone'];
 $address = $_POST['address'];
-//$other = $_POST['other'];
+$other = $_POST['other'];
 //紅色字體為判斷密碼是否填寫正確
-if($_SESSION['name'] != null && $pw != null && $pw2 != null && $pw == $pw2)
+if($_SESSION['name'] != null)
 {
-    $id = $_SESSION['name'];
-
     //更新資料庫資料語法
-    $sql = "update nani set pw='$pw', phone='$telephone', email='$address' where id='$id'";
+    $sql = "update student set name='$pw', annual='$telephone', email='$address',phone='$other' where number='$id'";
 
     if(mysqli_query($link,$sql))
     {
         echo '修改成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=student.php>';
     }
     else
     {
         echo '修改失敗!';
-        echo $sql;
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=student.php>';
     }
 }
 else

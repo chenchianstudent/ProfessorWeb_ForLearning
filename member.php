@@ -34,9 +34,9 @@ if($_SESSION['name'] != null)
             "電話：$row[3], 地址：$row[4], 備註：$row[5]<br>";
     }
 }
-/*else
+else
 {
     echo '您無權限觀看此頁面!';
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=index1.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=pweb2.php>';
 }
-?>*/
+?>

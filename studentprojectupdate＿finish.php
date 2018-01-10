@@ -33,10 +33,9 @@ if($_SESSION['name'] != null)
         echo '<meta http-equiv=REFRESH CONTENT=2;url=control3.php>';
     }
 }
-/*else
+else
 {
     echo '您無權限觀看此頁面!';
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=index1.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=pweb2.php>';
 }
 ?>
-*/
