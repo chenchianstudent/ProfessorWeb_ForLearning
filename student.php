@@ -151,8 +151,8 @@ if($_SESSION['name'] != null){
 </nav>
 
 <div class="container-fluid text-center">
-    <div class="row content">
-        <div class="col-sm-2 sidenav">
+    <div class="row content" style="background-color: #ffb907">
+        <div class="col-sm-2 sidenav" style="background-color:  #9afff0">
         </div>
         <div class="col-sm-8 text-left">
             <h1 align="center">學生名單</h1>
@@ -172,16 +172,57 @@ if($_SESSION['name'] != null){
                 ?>
                 <tbody><tr class="odd">
                     <td>學生:<?php echo $rows[1]?><br>學年度:<?php echo $rows[2]?><br>信箱: <?php echo $rows[3]?><br>連絡電話:<?php echo $rows[4]?><br></td>
+                    <td width="5%" align="right">
+                        <p>
+                            <?php
+                            $sql = "SELECT * FROM student where number";
+                            $result = mysqli_query($link,$sql);
+                            $row = mysqli_fetch_row($result);
+                            echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate.php\">";
+                            echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                            echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                            echo "</form>";
+
+                            ?>
+                        </p>
+                        <p>
+                            <?php
+                            $sql = "SELECT * FROM student where number";
+                            $result = mysqli_query($link,$sql);
+                            $row = mysqli_fetch_row($result);
+                            echo "<form name=\"form\" method=\"post\" action=\"studentdelete_finish.php\">";
+                            echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                            echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                            echo "</form>";
+
+                            ?>
+                        </p>
+
+
+                    </td>
                 </tr>
                 <?php }?>
-
-
-
-
                 </tbody></table>
 
         </div>
-        <div class="col-sm-2 sidenav">
+        <div class="col-sm-2 sidenav" style="background-color: #9afff0">
+            <h2 align="center">新增</h2>
+            <div class="well" style="background-color: #fffaad">
+            <?php
+            $sql = "SELECT * FROM student where number";
+            $result = mysqli_query($link,$sql);
+            $row = mysqli_fetch_row($result);
+            echo "<form name=\"form\" method=\"post\" action=\"studentregister_finish.php\">";
+            //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+            echo "學生：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+            echo "學年度：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+            echo "信箱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+            echo "連絡電話：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
+            echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+            echo "</form>";
+
+            ?>
+            </div>
         </div>
     </div>
 </div>
