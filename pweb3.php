@@ -145,9 +145,9 @@
                     include("mysql_connect.inc.php");
                     mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
                     mysqli_select_db("105021007");//我要從member這個資料庫撈資料
-                    $poi=mysqli_select_db("studentsproject");//我要從member這個資料庫撈資料
+                    $poi=mysqli_select_db("studentsproject01");//我要從member這個資料庫撈資料
                     mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
-                    $data=mysqli_query($link,"SELECT * FROM studentsproject");//從member中選取全部(*)的資料
+                    $data=mysqli_query($link,"SELECT * FROM studentsproject01");//從member中選取全部(*)的資料
 
                     ?>
                     <div class="entry">
@@ -157,7 +157,7 @@
                                 { $rows=mysqli_fetch_row($data);
                                 ?>
                             <tbody><tr class="odd">
-                                <td width="5%"><?php echo $rows[0]?></td>
+                                <td width="5%"><?php echo $i?></td>
                                 <td>學年度:<?php echo $rows[2]?><br>計畫名稱:<?php echo $rows[1]?><br>指導教授: <?php echo $rows[3]?><br>學生姓名:<?php echo $rows[4]?><br></td>
                             </tr>
                             <?php }?>
