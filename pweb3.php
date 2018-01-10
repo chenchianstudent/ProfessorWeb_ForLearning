@@ -107,9 +107,9 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="pweb2.php">首頁</a></li>
-                <li><a href="pweb4.html">簡歷</a></li>
+                <li><a href="pweb-1.html">簡歷</a></li>
                 <li class="active"><a href="pweb3.php">學術</a></li>
-                <li><a href="pweb4.html">著作</a></li>
+                <li><a href="pweb4.php">著作</a></li>
                 <li><a href="pweb5.php">學生</a></li>
                 <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
             </ul>
@@ -181,60 +181,26 @@
 
                     <h2 class="title">指導論文／Thesis Advisor</h2>
                     <p></p>
+                    <?php
+                    include("mysql_connect.inc.php");
+                    mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                    mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                    $poi=mysqli_select_db("thesisadvisor");//我要從member這個資料庫撈資料
+                    mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                    $data=mysqli_query($link,"SELECT * FROM thesisadvisor");//從member中選取全部(*)的資料
+
+                    ?>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                            <?php
+                            for($i=1;$i<=mysqli_num_rows($data);$i++)
+                            { $rows=mysqli_fetch_row($data);
+                            ?>
                             <tbody><tr class="odd">
-                                <td width="5%">1</td>
-                                <td>1052：林梅玉<br>國小學科成績資訊分析集彙總-以二林國小二年級為例<br>Analysis and Summary of the Subject Performance of an Elementary School -A Case Study of Second Grade Students of Erlin Primary School</td>
+                                <td width="5%"><?php echo $i?></td>
+                                <td><?php echo $rows[1]?><br><?php echo $rows[2]?><br><?php echo $rows[3]?><br><?php echo $rows[4]?><br></td>
                             </tr>
-                            <tr>
-                                <td width="5%">2</td>
-                                <td>1052：林福星<br>新住民子女學習研究之成效-以彰化縣國民小學為例<br>Students' Learning Performance Study of New Immigrant Residents- A Case Study of a Primary School in Changhua County</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">3</td>
-                                <td>1042：林宗輝<br>食品產銷履歷即時認證追溯系統之研究<br>The Study on The Traceability and tractability of Food Origins</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">4</td>
-                                <td>1042：陳世明<br>基於漢字理論之大數據驗證臺語漢字的方法<br>Big Data Methods for Taiwanese Dialect Character Verification Based on a Chinese-Origin Hypothesis</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">5</td>
-                                <td>1041：馮棟煌<br>無限感測網路基於模糊理論中繼選擇演算法安全策略之研究<br>The Study on Safety Strategy for Fuzzy-based Relay Selection Algorithm in Wireless Sensor Networks</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">6</td>
-                                <td>1032：紀逸倫<br>行動裝置應用服務(APP)安全關鍵因素對科技接受模式關聯之研究<br>The Research of Critical Security Factors of Mobile Applications on Techonlogy Acceptance Model</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">7</td>
-                                <td>1032：潘憲岑<br>利用數據關聯性建構語音辨識模型之研究<br>A Study of Using Data Correlation to Construct a Speech Recongnition Model</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">8</td>
-                                <td>1032：孫加榮<br>適用於SYN洪流攻擊的網路犯罪調查程序之研究<br>The study on Investigation Procedure of Cybercrime for SYN Flooding Attack</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">9</td>
-                                <td>1002：彭景堂<br>結合RFID以設計田徑訓練之時間雲端監控系統，以國小學生200公尺競賽為例<br>Monitoring system for track and field training timing by using RFID and the cloud – a case study of 200 meters competition</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">10</td>
-                                <td>1002：吳玫賢<br>應用RFID的技術探討資訊融入閱讀的成效<br>Explore the Effectiveness of Reading by Integrating RFID technology</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">11</td>
-                                <td>1002：魏秀玲<br>以RFID無線射頻辨別技術建置自主學習的科學教室<br>Implementing an Independent Learning Science Classroom Based on RFID Technology</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">12</td>
-                                <td>1002：梁玉青<br>運用雲端及RFID建構中區職業訓練中心出差訪視稽核管理系統<br>Implementing a visit audit management system for Vocational Training Center at the Central Region by Using RFID and Cloud</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">13</td>
-                                <td>1002：江明書<br>運用RFID建構自動倉儲資訊系統<br>Implementing an Automated Storage and Retrieval Information Systems by Using RFID</td>
-                            </tr>
+                            <?php }?>
 
                             </tbody></table>
                         <p>&nbsp;</p>
@@ -733,156 +699,27 @@
                     <h2 class="title">研究計畫／Research Grant</h2>
                     <p></p>
                     <div class="entry">
+                        <?php
+                        include("mysql_connect.inc.php");
+                        mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                        mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                        $poi=mysqli_select_db("researchgrant");//我要從member這個資料庫撈資料
+                        mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                        $data=mysqli_query($link,"SELECT * FROM researchgrant");//從member中選取全部(*)的資料
+
+                        ?>
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
-                            <tbody><tr class="odd">
-                                <td width="5%">1</td>
-                                <td>個別型，MOST 104-2221-E-468 -004，黃明祥，國科會，雲端系統之關鍵字搜尋公開金鑰加密法之研究(II)，2015.8.1 ~ 2016.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">2</td>
-                                <td>個別型，NSC 103-2221-E-468 -026，黃明祥，國科會，雲端系統之關鍵字搜尋公開金鑰加密法之研究，2014.8.1 ~ 2015.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">3</td>
-                                <td>產學合作，NSC 103-2622-E-468-001-CC2，黃明祥,周永振(YUNG-CHEN CHOU)，國科會，雲端與行動智慧整合之安全電子投票系統，2014.2.1 ~ 2015.1.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">4</td>
-                                <td>產學合作，NSC 103-2622-H-468-001-CC2，黃明祥,楊正穎，國科會，行動通訊點對點網路之數位權管理系統研發，2014.2.1 ~ 2015.1.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">5</td>
-                                <td>個別型，NSC 102-2221-E-468-020，黃明祥，國科會，雲端儲存金鑰管理與審核代理機制之研究(II)，2013.8.1 ~ 2014.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">6</td>
-                                <td>個別型，NSC 101-2221-E-468-019，黃明祥(Min-Shiang Hwang)，國科會，雲端儲存服務安全與審核機制之研究，2012.8.1 ~ 2013.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">7</td>
-                                <td>產學合作，NSC 101-2622-E-468-002-CC3，黃明祥(Min-Shiang Hwang)，國科會，雲端儲存服務之應用安全機制建置於企業私有雲，2012.6.1 ~ 2013.5.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">8</td>
-                                <td>，NSC 101-2622-H-468-001-CC3，黃明祥(Min-Shiang Hwang)，國科會，雲端與行動智慧整合之旅遊服務系統，2012.6.1 ~ 2013.5.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">9</td>
-                                <td>，NSC98-2221-E-005-050-MY3，黃明祥(Min-Shiang Hwang)，國科會，點對點網路(P2P)安全機制之研究(3/3)，2011.8.1 ~ 2012.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">10</td>
-                                <td>產學合作，NSC99-2622-E-468-003-CC3，黃明祥，國科會，具隱私權保護的NFC手機行動購物系統之研究與開發，2010.11.1 ~ 2011.10.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">11</td>
-                                <td>，NSC98-2221-E-005-050-MY3，黃明祥(Min-Shiang Hwang)，國科會，點對點網路(P2P)安全機制之研究(2/3)，2010.8.1 ~ 2011.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">12</td>
-                                <td>，20110505142811，黃明祥(Min-Shiang Hwang),曹世昌(Shyh-Chang Tsaur)，教育部，校園安全應用RFID協助特殊教育學生安全計畫，2010.6.15 ~ 2011.3.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">13</td>
-                                <td>，NSC98-2221-E-005-050-MY3，黃明祥(Min-Shiang Hwang)，國科會，點對點網路(P2P)安全機制之研究(1/3)，2009.8.1 ~ 2010.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">14</td>
-                                <td>，NSC95-2221-E-005-051-MY3，黃明祥(Min-Shiang Hwang)，國科會，無線感測網路安全機制之研究(3/3)，2008.8.1 ~ 2009.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">15</td>
-                                <td>，NSC96-2622-E-005-017-CC3，黃明祥(Min-Shiang Hwang)，國科會，具實用及安全無線感測網路系統之研究及實作，2007.11.1 ~ 2008.10.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">16</td>
-                                <td>，NSC95-2221-E-005-051-MY3，黃明祥(Min-Shiang Hwang)，國科會，無線感測網路安全機制之研究(2/3)，2007.8.1 ~ 2008.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">17</td>
-                                <td>，GE95110，黃明祥(Min-Shiang Hwang)，職訓局，網際網路資料庫設計推廣教育班，2006.8.1 ~ 2007.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">18</td>
-                                <td>，NSC95-2221-E-005-051-MY3，黃明祥(Min-Shiang Hwang)，國科會，無線感測網路安全機制之研究(1/3)，2006.8.1 ~ 2007.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">19</td>
-                                <td>，NSC94-2213-E-005-001，黃明祥(Min-Shiang Hwang)，國科會，多人驗證之廣義化代理簽章之研究及實作開發(3/3)，2005.8.1 ~ 2006.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">20</td>
-                                <td>，NSC94-2622-E-005-015-CC3，黃明祥(Min-Shiang Hwang)，國科會，具實用及安全電子現金系統之研究及實作，2005.5.1 ~ 2006.4.30</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">21</td>
-                                <td>，NSC93-2213-E-005-005，黃明祥(Min-Shiang Hwang)，國科會，多人驗證之廣義化代理簽章之研究及實作開發(2/3)，2004.8.1 ~ 2005.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">22</td>
-                                <td>，NSC93-2622-E-005-017-CC3，黃明祥(Min-Shiang Hwang)，國科會，基於生物資訊之使用者認證系統及存取控制研究及實作開發，2004.5.1 ~ 2005.4.30</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">23</td>
-                                <td>，NSC92-2213-E-005-027，黃明祥(Min-Shiang Hwang)，國科會，多人驗證之廣義化代理簽章之研究及實作開發(1/3)，2003.8.1 ~ 2004.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">24</td>
-                                <td>，NSC92- 2622-E-005-016-CC3，黃明祥(Min-Shiang Hwang)，國科會，基於橢圓曲線密碼系統之藍芽微網協定研究及實作開發，2003.5.1 ~ 2004.4.30</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">25</td>
-                                <td>，台顧字第0920030187號函，黃明祥(Min-Shiang Hwang)，教育部，通訊科技教育改進計畫，2003.3.1 ~ 2003.12.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">26</td>
-                                <td>，NSC91-2218-E-324-003，黃明祥(Min-Shiang Hwang)，國科會，中部科學園區推動計畫：安全異質性接取網路之服務與應用整合型計畫，2002.12.1 ~ 2003.12.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">27</td>
-                                <td>，NSC91-2213-E-005-029，,黃明祥(Min-Shiang Hwang)，國科會，以工作流程管理與軟體代理人為基礎的虛擬製造企業系統整合技術(2/2)，2002.8.1 ~ 2003.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">28</td>
-                                <td>，NSC91-2213-E-324-003，黃明祥(Min-Shiang Hwang)，國科會，具匿名及不可否認性之網路競標研究及製作(3/3)，2002.8.1 ~ 2003.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">29</td>
-                                <td>，NSC91-2622-E-324-006-CC3，黃明祥(Min-Shiang Hwang)，國科會，架構於迷袋系統之認證加密系統機制研究及實作開發，2002.6.1 ~ 2003.5.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">30</td>
-                                <td>，NSC91-2422-H-324-322，黃明祥(Min-Shiang Hwang)，國科會，數位典藏資料智慧財產權與隱私權管理機制研究與實作開發，2002.3.1 ~ 2003.2.28</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">31</td>
-                                <td>，NSC90-2213-E-324-005，黃明祥(Min-Shiang Hwang)，國科會，具匿名及不可否認性之網路競標研究及製作(2/3)，2001.8.1 ~ 2002.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">32</td>
-                                <td>，NSC90-2213-E-324-004，黃明祥(Min-Shiang Hwang)，國科會，數位浮水印技術之研究及製作(3/3)，2001.8.1 ~ 2002.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">33</td>
-                                <td>，NSC90-2218-E-324-012，,黃明祥(Min-Shiang Hwang)，國科會，以工作流程管理與軟體代理人為基礎的虛擬製造企業系統整合技術(1/2)，2001.8.1 ~ 2002.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">34</td>
-                                <td>，NSC90-2213-E-324-015，黃明祥(Min-Shiang Hwang)，國科會，行動用戶認證機制之研究及製作，2001.8.1 ~ 2002.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">35</td>
-                                <td>，NSC89-2213-E-324-053，黃明祥(Min-Shiang Hwang)，國科會，具匿名及不可否認性之網路競標研究及製作(1/3)，2000.8.1 ~ 2001.7.31</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">36</td>
-                                <td>，NSC89-2213-E-324-035，黃明祥(Min-Shiang Hwang)，國科會，數位浮水印技術之研究及製作(2/3)，2000.8.1 ~ 2001.7.31</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">37</td>
-                                <td>，UT89-D07-0-0004，黃明祥(Min-Shiang Hwang)，國家檔案局，電子檔案儲存之安全認證研究， ~ </td>
-                            </tr>
-                            </tbody></table>
+                                <?php
+                                for($i=1;$i<=mysqli_num_rows($data);$i++)
+                                { $rows=mysqli_fetch_row($data);
+                                ?>
+                                <tbody><tr class="odd">
+                                    <td width="5%"><?php echo $i?></td>
+                                    <td><?php echo $rows[1]?>,<?php echo $rows[2]?>,<?php echo $rows[3]?>,<?php echo $rows[4]?>,<?php echo $rows[5]?>,<?php echo $rows[6]?></td>
+
+                                </tr>
+                                <?php }?>
+                                </tbody></table>
                         <p>&nbsp;</p>
                     </div>
                     <p></p>

@@ -128,10 +128,10 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
 
-                <li><a href="backcontrol.php">控制台</a></li>
-                <li><a href="pweb-1.php">簡歷</a></li>
-                <li><a href="control3.php">學術</a></li>
-                <li><a href="control4.php">著作</a></li>
+                <li><a href="pweb2.php">首頁</a></li>
+                <li><a href="pweb-1.html">簡歷</a></li>
+                <li><a href="pweb3.php">學術</a></li>
+                <li><a href="pweb4.php">著作</a></li>
                 <li class="active"><a href="pweb5.php">學生</a></li>
                 <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
             </ul>
@@ -181,7 +181,7 @@
 </div>
 
 <footer class="container-fluid text-center">
-    <p>Powerd by 絕對不是陳麒安 注意!!!你正在管理員介面</p>
+    <p>Powerd by 絕對不是陳麒安  但分數請打給陳麒安</p>
     <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
 </footer>
 
