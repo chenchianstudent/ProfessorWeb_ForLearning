@@ -172,7 +172,7 @@ if($_SESSION['name'] != null){
                                         $sql = "SELECT * FROM studentsproject01 where number";
                                         $result = mysqli_query($link,$sql);
                                         $row = mysqli_fetch_row($result);
-                                        echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate＿finish.php\">";
+                                        echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate.php\">";
                                         echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                         echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                                         echo "</form>";

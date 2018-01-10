@@ -23,18 +23,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="control3.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="control3.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/control3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="187" column="88" lean-forward="false" selection-start-line="187" selection-start-column="88" selection-end-line="187" selection-end-column="88" />
+            <state relative-caret-position="375">
+              <caret line="174" column="111" lean-forward="false" selection-start-line="174" selection-start-column="111" selection-end-line="174" selection-end-column="111" />
               <folding>
-                <marker date="1515556671031" expanded="true" signature="5472:5501" ph="SELECT * FRO... studentsproject" />
-                <marker date="1515556671031" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
-                <marker date="1515556671031" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
-                <marker date="1515556671031" expanded="true" signature="7155:7199" ph="SELECT * FRO... studentsproject01" />
-                <marker date="1515556671031" expanded="true" signature="8134:8178" ph="SELECT * FRO... studentsproject" />
-                <marker date="1515556671031" expanded="true" signature="9486:9528" ph="SELECT * FRO... studentsproject" />
+                <marker date="1515556955057" expanded="true" signature="5472:5501" ph="SELECT * FRO... studentsproject" />
+                <marker date="1515556955057" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
+                <marker date="1515556955057" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
+                <marker date="1515556955057" expanded="true" signature="7148:7192" ph="SELECT * FRO... studentsproject01" />
+                <marker date="1515556955057" expanded="true" signature="8127:8171" ph="SELECT * FRO... studentsproject" />
+                <marker date="1515556955057" expanded="true" signature="9479:9521" ph="SELECT * FRO... studentsproject" />
               </folding>
             </state>
           </provider>
@@ -116,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studentprojectupdate.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="studentprojectupdate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/studentprojectupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+            <state relative-caret-position="50">
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
               <folding>
                 <marker date="1515556905925" expanded="true" signature="403:453" ph="SELECT * FRO... studentsproject01" />
               </folding>
@@ -204,8 +204,8 @@
         <option value="$PROJECT_DIR$/studentprojectdelete_finish.php" />
         <option value="$PROJECT_DIR$/studentprojectregister_finish.php" />
         <option value="$PROJECT_DIR$/studentprojectupdate＿finish.php" />
-        <option value="$PROJECT_DIR$/control3.php" />
         <option value="$PROJECT_DIR$/studentprojectupdate.php" />
+        <option value="$PROJECT_DIR$/control3.php" />
       </list>
     </option>
   </component>
@@ -320,16 +320,15 @@
       <workItem from="1515412813887" duration="1797000" />
       <workItem from="1515415178893" duration="986000" />
       <workItem from="1515491004450" duration="5735000" />
-      <workItem from="1515546828901" duration="8710000" />
+      <workItem from="1515546828901" duration="8784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125039000" />
+    <option name="totallyTimeSpent" value="125113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14947917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -732,21 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="187" column="88" lean-forward="false" selection-start-line="187" selection-start-column="88" selection-end-line="187" selection-end-column="88" />
-          <folding>
-            <marker date="1515556671031" expanded="true" signature="5472:5501" ph="SELECT * FRO... studentsproject" />
-            <marker date="1515556671031" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
-            <marker date="1515556671031" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
-            <marker date="1515556671031" expanded="true" signature="7155:7199" ph="SELECT * FRO... studentsproject01" />
-            <marker date="1515556671031" expanded="true" signature="8134:8178" ph="SELECT * FRO... studentsproject" />
-            <marker date="1515556671031" expanded="true" signature="9486:9528" ph="SELECT * FRO... studentsproject" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -791,10 +775,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/studentprojectupdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+        <state relative-caret-position="50">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding>
             <marker date="1515556905925" expanded="true" signature="403:453" ph="SELECT * FRO... studentsproject01" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="174" column="111" lean-forward="false" selection-start-line="174" selection-start-column="111" selection-end-line="174" selection-end-column="111" />
+          <folding>
+            <marker date="1515556955057" expanded="true" signature="5472:5501" ph="SELECT * FRO... studentsproject" />
+            <marker date="1515556955057" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
+            <marker date="1515556955057" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
+            <marker date="1515556955057" expanded="true" signature="7148:7192" ph="SELECT * FRO... studentsproject01" />
+            <marker date="1515556955057" expanded="true" signature="8127:8171" ph="SELECT * FRO... studentsproject" />
+            <marker date="1515556955057" expanded="true" signature="9479:9521" ph="SELECT * FRO... studentsproject" />
           </folding>
         </state>
       </provider>
