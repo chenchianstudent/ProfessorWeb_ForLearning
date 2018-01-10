@@ -53,7 +53,7 @@ if($id != null && $pw != null && $row[0] == $id && $row[2] == $pw)
 else
 {
     echo '登入失敗!';
-    //echo '<meta http-equiv=REFRESH CONTENT=1;url=index1.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=1;url=pweb2.php>';
 }
 function get_client_ip() {
     $ipaddress = '';

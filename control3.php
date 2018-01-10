@@ -117,7 +117,7 @@ if($_SESSION['name'] != null){
                 <li><a href="pweb-1.php">簡歷</a></li>
                 <li class="active"><a href="control3.php">學術</a></li>
                 <li><a href="control4.php">著作</a></li>
-                <li><a href="student.html">學生</a></li>
+                <li><a href="student.php">學生</a></li>
                 <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -152,9 +152,9 @@ if($_SESSION['name'] != null){
                     include("mysql_connect.inc.php");
                     mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
                     mysqli_select_db("105021007");//我要從member這個資料庫撈資料
-                    $poi=mysqli_select_db("studentsproject");//我要從member這個資料庫撈資料
+                    $poi=mysqli_select_db("studentsproject01");//我要從member這個資料庫撈資料
                     mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
-                    $data=mysqli_query($link,"SELECT * FROM studentsproject");//從member中選取全部(*)的資料
+                    $data=mysqli_query($link,"SELECT * FROM studentsproject01");//從member中選取全部(*)的資料
 
                     ?>
                     <div class="entry">
@@ -164,8 +164,21 @@ if($_SESSION['name'] != null){
                             { $rows=mysqli_fetch_row($data);
                             ?>
                             <tbody><tr >
-                                <td width="5%"><?php echo $rows[0]?></td>
+                                <td width="5%"><?php echo $i?></td>
                                 <td>學年度:<?php echo $rows[2]?><br>計畫名稱:<?php echo $rows[1]?><br>指導教授: <?php echo $rows[3]?><br>學生姓名:<?php echo $rows[4]?><br></td>
+                                <td width="5%" align="right">
+                                    <?php
+                                    $sql = "SELECT * FROM studentsproject01 where number";
+                                    $result = mysqli_query($link,$sql);
+                                    $row = mysqli_fetch_row($result);
+                                    echo "<form name=\"form\" method=\"post\" action=\"studentprojectdelete_finish.php\">";
+                                    echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" /><br>";
+                                    echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                    echo "</form>";
+
+                                    ?>
+
+                                </td>
                             </tr>
                             <?php }?>
                             <tr class="odd">
@@ -176,7 +189,7 @@ if($_SESSION['name'] != null){
                                     $result = mysqli_query($link,$sql);
                                     $row = mysqli_fetch_row($result);
                                     echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate＿finish.php\">";
-                                    echo "編號：<input type=\"text\" name=\"id\" value=\"$row[0]\" /><br>";
+                                   // echo "編號：<input type=\"text\" name=\"id\" value=\"$row[0]\" /><br>";
                                     echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"$row[1]\" /> <br>";
                                     echo "學年度：<input type=\"text\" name=\"telephone\" value=\"$row[2]\" /> <br>";
                                     echo "教授名稱：<input type=\"text\" name=\"address\" value=\"$row[3]\" /> <br>";
@@ -195,26 +208,11 @@ if($_SESSION['name'] != null){
                                     $result = mysqli_query($link,$sql);
                                     $row = mysqli_fetch_row($result);
                                     echo "<form name=\"form\" method=\"post\" action=\"studentprojectregister_finish.php\">";
-                                    echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                                    //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
                                     echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
                                     echo "學年度：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
                                     echo "教授名稱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
                                     echo "學生姓名：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
-                                    echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
-                                    echo "</form>";
-
-                                    ?>
-                                </td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">刪除</td>
-                                <td>
-                                    <?php
-                                    $sql = "SELECT * FROM studentsproject where number";
-                                    $result = mysqli_query($link,$sql);
-                                    $row = mysqli_fetch_row($result);
-                                    echo "<form name=\"form\" method=\"post\" action=\"studentprojectdelete_finish.php\">";
-                                    echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
                                     echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
                                     echo "</form>";
 

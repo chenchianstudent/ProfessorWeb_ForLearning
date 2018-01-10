@@ -17,23 +17,20 @@ $telephone = $_POST['telephone'];
 $address = $_POST['address'];
 $other = $_POST['other'];
 //紅色字體為判斷密碼是否填寫正確
-if($_SESSION['name'] != null && $id != null)
+if($_SESSION['name'] != null)
 {
-    $id = $_SESSION['name'];
-
     //更新資料庫資料語法
-    $sql = "update studentsproject set projectname='$pw', annual='$telephone', professor='$address',studentname='$other' where number='$id'";
+    $sql = "update studentsproject01 set projectname='$pw', annual='$telephone', professor='$address',studentname='$other' where number='$id'";
 
     if(mysqli_query($link,$sql))
     {
         echo '修改成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=control3.php>';
     }
     else
     {
         echo '修改失敗!';
-        echo $sql;
-//        echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=control3.php>';
     }
 }
 /*else

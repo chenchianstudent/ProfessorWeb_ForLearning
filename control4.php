@@ -114,7 +114,7 @@ if($_SESSION['name'] != null){
                 <li><a href="pweb-1.php">簡歷</a></li>
                 <li><a href="control3.php">學術</a></li>
                 <li class="active"><a href="control4.php">著作</a></li>
-                <li><a href="student.html">學生</a></li>
+                <li><a href="student.php">學生</a></li>
                 <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

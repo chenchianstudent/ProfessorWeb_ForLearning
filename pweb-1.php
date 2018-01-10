@@ -54,11 +54,11 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="backcontrol.php">首頁</a></li>
+                <li><a href="backcontrol.php">控制台</a></li>
                 <li class="active"><a href="pweb-1.php">簡歷</a></li>
                 <li><a href="control3.php">學術</a></li>
                 <li><a href="control4.php">著作</a></li>
-                <li><a href="*">學生</a></li>
+                <li><a href="student.php">學生</a></li>
                 <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

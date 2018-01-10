@@ -18,19 +18,19 @@ $address = $_POST['address'];
 $other = $_POST['other'];
 //判斷帳號密碼是否為空值
 //確認密碼輸入的正確性
-if($id != null)
+if($pw != null)
 {
     //新增資料進資料庫語法
-    $sql = "insert into studentsproject (number, projectname, annual, professor,studentname) values ('$id','$pw','$telephone', '$address', '$other')";
+    $sql = "insert into studentsproject01 (projectname, annual, professor,studentname) values ('$pw','$telephone', '$address', '$other')";
     if(mysqli_query($link,$sql))
     {
         echo '新增成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=control3.php>';
     }
     else
     {
         echo '新增失敗!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=backcontrol.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=control3.php>';
     }
 }
 else
