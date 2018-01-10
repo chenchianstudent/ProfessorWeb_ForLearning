@@ -805,7 +805,6 @@ if($_SESSION['name'] != null){
 
                         ?>
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
-                            <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
                                 <?php
                                 for($i=1;$i<=mysqli_num_rows($data);$i++)
                                 { $rows=mysqli_fetch_row($data);

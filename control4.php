@@ -1035,27 +1035,78 @@ if($_SESSION['name'] != null){
                     <p></p>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
-                            <tbody><tr class="odd">
-                                <td width="5%">1</td>
-                                <td>植基於類神經網路之數位浮水印技術，發明專利，台灣，發明第145485號，2002.10.20 ~ 2020.7.18</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">2</td>
-                                <td>具強韌性之多媒體數位浮水印技術，，台灣，TW00451170，2001.8.1 ~ 2019.7.18</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">3</td>
-                                <td>特徵導向式多媒體數位浮水印技術，發明專利，台灣，發明第140057號，2001.8.1 ~ 2019.7.18</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">4</td>
-                                <td>具雙重驗證功能之端對端無線通訊安全協定，發明專利，台灣，發明第140313號，2001.8.1 ~ 2019.7.18</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">5</td>
-                                <td>用於數位影像檔或數位聲音檔之加密裝置，發明專利，台灣，發明第103202號，1999.5.11 ~ 2017.11.27</td>
-                            </tr>
-                            </tbody></table>
+                            <?php
+                            include("mysql_connect.inc.php");
+                            mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                            mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                            $poi=mysqli_select_db("patents");//我要從member這個資料庫撈資料
+                            mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                            $data=mysqli_query($link,"SELECT * FROM patents");//從member中選取全部(*)的資料
+
+                            ?>
+                            <div class="entry">
+                                <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                                    <?php
+                                    for($i=1;$i<=mysqli_num_rows($data);$i++)
+                                    { $rows=mysqli_fetch_row($data);
+                                    ?>
+                                    <tbody><tr class="odd">
+                                        <td width="5%"><?php echo $i?></td>
+                                        <td><?php echo $rows[1]?>,<?php echo $rows[2]?>,<?php echo $rows[3]?>,<?php echo $rows[4]?></td>
+                                        <td width="5%" align="right">
+                                            <p>
+                                                <?php
+                                                $sql = "SELECT * FROM researchgrant where number";
+                                                $result = mysqli_query($link,$sql);
+                                                $row = mysqli_fetch_row($result);
+                                                echo "<form name=\"form\" method=\"post\" action=\"researchgrantupdate.php\">";
+                                                echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                                echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                                echo "</form>";
+
+                                                ?>
+                                            </p>
+                                            <p>
+                                                <?php
+                                                $sql = "SELECT * FROM researchgrant where number";
+                                                $result = mysqli_query($link,$sql);
+                                                $row = mysqli_fetch_row($result);
+                                                echo "<form name=\"form\" method=\"post\" action=\"researchgrantdelete_finish.php\">";
+                                                echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                                echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                                echo "</form>";
+
+                                                ?>
+                                            </p>
+                                        </td>
+
+                                    </tr>
+                                    <?php }?>
+                                    <tr class="odd">
+                                        <td width="5%">新增</td>
+                                        <td>
+                                            <?php
+                                            $sql = "SELECT * FROM researchgrant where number";
+                                            $result = mysqli_query($link,$sql);
+                                            $row = mysqli_fetch_row($result);
+                                            echo "<form name=\"form\" method=\"post\" action=\"researchgrantregister_finish.php\">";
+                                            //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                                            echo "種類：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+                                            echo "編碼：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+                                            echo "參與人員：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+                                            echo "研究處：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
+                                            echo "計畫名稱：<input type=\"text\" name=\"other1\" value=\"*\" /> <br>";
+                                            echo "時間：<input type=\"text\" name=\"time\" value=\"*\" /> <br>";
+                                            echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                            echo "</form>";
+
+                                            ?>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+
+
+                                    </tbody></table>
                         <p>&nbsp;</p>
                     </div>
 

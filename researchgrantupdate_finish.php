@@ -22,7 +22,7 @@ if($_SESSION['name'] != null)
 {
     //更新資料庫資料語法
     $sql = "update researchgrant set type='$pw', pwnumber='$telephone', name='$address',place='$other',researchname='$other1', time='$time' where number='$id'";
-    
+
 
     if(mysqli_query($link,$sql))
     {

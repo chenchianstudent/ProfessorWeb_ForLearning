@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7abbd484-3310-450c-852e-5c82a62bf491" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/control3.php" afterPath="$PROJECT_DIR$/control3.php" />
-      <change beforePath="$PROJECT_DIR$/pweb2.php" afterPath="$PROJECT_DIR$/pweb2.php" />
-      <change beforePath="$PROJECT_DIR$/pweb3.php" afterPath="$PROJECT_DIR$/pweb3.php" />
-      <change beforePath="$PROJECT_DIR$/pweb5.php" afterPath="$PROJECT_DIR$/pweb5.php" />
+      <change beforePath="$PROJECT_DIR$/control4.php" afterPath="$PROJECT_DIR$/control4.php" />
+      <change beforePath="$PROJECT_DIR$/pweb4.php" afterPath="$PROJECT_DIR$/pweb4.php" />
+      <change beforePath="$PROJECT_DIR$/researchgrantupdate_finish.php" afterPath="$PROJECT_DIR$/researchgrantupdate_finish.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,21 +32,21 @@
       <file leaf-file-name="control3.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="824" column="56" lean-forward="false" selection-start-line="824" selection-start-column="56" selection-end-line="824" selection-end-column="56" />
+            <state relative-caret-position="476">
+              <caret line="865" column="34" lean-forward="true" selection-start-line="844" selection-start-column="28" selection-end-line="865" selection-end-column="34" />
               <folding>
-                <marker date="1515598553028" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
-                <marker date="1515598553028" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
-                <marker date="1515598553028" expanded="true" signature="7148:7192" ph="SELECT * FRO... studentsproject01" />
-                <marker date="1515598553028" expanded="true" signature="8127:8169" ph="SELECT * FRO... studentsproject" />
-                <marker date="1515598553028" expanded="true" signature="10120:10147" ph="SELECT * FRO... thesisadvisor" />
-                <marker date="1515598553028" expanded="true" signature="10992:11032" ph="SELECT * FRO... studentsproject01" />
-                <marker date="1515598553028" expanded="true" signature="11786:11826" ph="SELECT * FRO... studentsproject01" />
-                <marker date="1515598553028" expanded="true" signature="12776:12816" ph="SELECT * FRO... studentsproject" />
-                <marker date="1515598553028" expanded="true" signature="52361:52388" ph="SELECT * FRO... researchgrant" />
-                <marker date="1515598553028" expanded="true" signature="53356:53396" ph="SELECT * FRO... researchgrant" />
-                <marker date="1515598553028" expanded="true" signature="54161:54201" ph="SELECT * FRO... researchgrant" />
-                <marker date="1515598553028" expanded="true" signature="55179:55219" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515600796462" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
+                <marker date="1515600796462" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
+                <marker date="1515600796462" expanded="true" signature="7148:7192" ph="SELECT * FRO... studentsproject01" />
+                <marker date="1515600796462" expanded="true" signature="8127:8169" ph="SELECT * FRO... studentsproject" />
+                <marker date="1515600796462" expanded="true" signature="10120:10147" ph="SELECT * FRO... thesisadvisor" />
+                <marker date="1515600796462" expanded="true" signature="10992:11032" ph="SELECT * FRO... studentsproject01" />
+                <marker date="1515600796462" expanded="true" signature="11786:11826" ph="SELECT * FRO... studentsproject01" />
+                <marker date="1515600796462" expanded="true" signature="12776:12816" ph="SELECT * FRO... studentsproject" />
+                <marker date="1515600796462" expanded="true" signature="52361:52388" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515600796462" expanded="true" signature="53249:53289" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515600796462" expanded="true" signature="54054:54094" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515600796462" expanded="true" signature="55072:55112" ph="SELECT * FRO... researchgrant" />
               </folding>
             </state>
           </provider>
@@ -63,13 +64,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="researchgrantupdate_finish.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="researchgrantupdate_finish.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/researchgrantupdate_finish.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="400">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
-                <marker date="1515598650474" expanded="true" signature="489:635" ph="update thesisadvisor... " />
+                <marker date="1515598706071" expanded="true" signature="489:635" ph="update thesisadvisor... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="control4.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/control4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="751">
+              <caret line="1105" column="41" lean-forward="false" selection-start-line="1105" selection-start-column="41" selection-end-line="1105" selection-end-column="41" />
+              <folding>
+                <marker date="1515600827525" expanded="true" signature="92879:92900" ph="SELECT * FRO... patents" />
+                <marker date="1515600827525" expanded="true" signature="93844:93884" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515600827525" expanded="true" signature="94726:94766" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515600827525" expanded="true" signature="95855:95895" ph="SELECT * FRO... researchgrant" />
               </folding>
             </state>
           </provider>
@@ -124,18 +140,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thesisadvisordelete_finish.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thesisadvisordelete_finish.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="34" column="2" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="2" />
-              <folding>
-                <marker date="1515592841184" expanded="true" signature="309:353" ph="delete from thesisadvisor... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="thesisadvisorregister_finish.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thesisadvisorregister_finish.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -151,9 +155,11 @@
       <file leaf-file-name="pweb4.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pweb4.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="1350" column="20" lean-forward="false" selection-start-line="1350" selection-start-column="20" selection-end-line="1352" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="701">
+              <caret line="1050" column="0" lean-forward="true" selection-start-line="1029" selection-start-column="19" selection-end-line="1050" selection-end-column="0" />
+              <folding>
+                <marker date="1515600418877" expanded="true" signature="92661:92682" ph="SELECT * FRO... patents" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +197,6 @@
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/studentprojectregister_finish.php" />
         <option value="$PROJECT_DIR$/studentprojectdelete_finish.php" />
-        <option value="$PROJECT_DIR$/control4.php" />
         <option value="$PROJECT_DIR$/pweb-1.php" />
         <option value="$PROJECT_DIR$/backcontrol.php" />
         <option value="$PROJECT_DIR$/pweb-1.html" />
@@ -213,7 +218,6 @@
         <option value="$PROJECT_DIR$/delete_finish.php" />
         <option value="$PROJECT_DIR$/delete.php" />
         <option value="$PROJECT_DIR$/allmember.php" />
-        <option value="$PROJECT_DIR$/pweb4.php" />
         <option value="$PROJECT_DIR$/pweb2.php" />
         <option value="$PROJECT_DIR$/pweb5.php" />
         <option value="$PROJECT_DIR$/thesisadvisorregister_finish.php" />
@@ -224,8 +228,10 @@
         <option value="$PROJECT_DIR$/researchgrantregister_finish.php" />
         <option value="$PROJECT_DIR$/researchgrantdelete_finish.php" />
         <option value="$PROJECT_DIR$/researchgrantupdate.php" />
-        <option value="$PROJECT_DIR$/control3.php" />
         <option value="$PROJECT_DIR$/researchgrantupdate_finish.php" />
+        <option value="$PROJECT_DIR$/pweb4.php" />
+        <option value="$PROJECT_DIR$/control3.php" />
+        <option value="$PROJECT_DIR$/control4.php" />
       </list>
     </option>
   </component>
@@ -341,16 +347,15 @@
       <workItem from="1515415178893" duration="986000" />
       <workItem from="1515491004450" duration="5767000" />
       <workItem from="1515568091069" duration="19000" />
-      <workItem from="1515568123345" duration="15723000" />
+      <workItem from="1515568123345" duration="17516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132103000" />
+    <option name="totallyTimeSpent" value="133896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15652174" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
@@ -791,14 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="99" column="2" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="99" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pweb3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -873,35 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pweb4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="1350" column="20" lean-forward="false" selection-start-line="1350" selection-start-column="20" selection-end-line="1352" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/control3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="824" column="56" lean-forward="false" selection-start-line="824" selection-start-column="56" selection-end-line="824" selection-end-column="56" />
-          <folding>
-            <marker date="1515598553028" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
-            <marker date="1515598553028" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
-            <marker date="1515598553028" expanded="true" signature="7148:7192" ph="SELECT * FRO... studentsproject01" />
-            <marker date="1515598553028" expanded="true" signature="8127:8169" ph="SELECT * FRO... studentsproject" />
-            <marker date="1515598553028" expanded="true" signature="10120:10147" ph="SELECT * FRO... thesisadvisor" />
-            <marker date="1515598553028" expanded="true" signature="10992:11032" ph="SELECT * FRO... studentsproject01" />
-            <marker date="1515598553028" expanded="true" signature="11786:11826" ph="SELECT * FRO... studentsproject01" />
-            <marker date="1515598553028" expanded="true" signature="12776:12816" ph="SELECT * FRO... studentsproject" />
-            <marker date="1515598553028" expanded="true" signature="52361:52388" ph="SELECT * FRO... researchgrant" />
-            <marker date="1515598553028" expanded="true" signature="53356:53396" ph="SELECT * FRO... researchgrant" />
-            <marker date="1515598553028" expanded="true" signature="54161:54201" ph="SELECT * FRO... researchgrant" />
-            <marker date="1515598553028" expanded="true" signature="55179:55219" ph="SELECT * FRO... researchgrant" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/researchgrantregister_finish.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -924,10 +892,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/researchgrantupdate_finish.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="400">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
-            <marker date="1515598650474" expanded="true" signature="489:635" ph="update thesisadvisor... " />
+            <marker date="1515598706071" expanded="true" signature="489:635" ph="update thesisadvisor... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pweb4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="1050" column="0" lean-forward="true" selection-start-line="1029" selection-start-column="19" selection-end-line="1050" selection-end-column="0" />
+          <folding>
+            <marker date="1515600418877" expanded="true" signature="92661:92682" ph="SELECT * FRO... patents" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="865" column="34" lean-forward="true" selection-start-line="844" selection-start-column="28" selection-end-line="865" selection-end-column="34" />
+          <folding>
+            <marker date="1515600796462" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
+            <marker date="1515600796462" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
+            <marker date="1515600796462" expanded="true" signature="7148:7192" ph="SELECT * FRO... studentsproject01" />
+            <marker date="1515600796462" expanded="true" signature="8127:8169" ph="SELECT * FRO... studentsproject" />
+            <marker date="1515600796462" expanded="true" signature="10120:10147" ph="SELECT * FRO... thesisadvisor" />
+            <marker date="1515600796462" expanded="true" signature="10992:11032" ph="SELECT * FRO... studentsproject01" />
+            <marker date="1515600796462" expanded="true" signature="11786:11826" ph="SELECT * FRO... studentsproject01" />
+            <marker date="1515600796462" expanded="true" signature="12776:12816" ph="SELECT * FRO... studentsproject" />
+            <marker date="1515600796462" expanded="true" signature="52361:52388" ph="SELECT * FRO... researchgrant" />
+            <marker date="1515600796462" expanded="true" signature="53249:53289" ph="SELECT * FRO... researchgrant" />
+            <marker date="1515600796462" expanded="true" signature="54054:54094" ph="SELECT * FRO... researchgrant" />
+            <marker date="1515600796462" expanded="true" signature="55072:55112" ph="SELECT * FRO... researchgrant" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="1105" column="41" lean-forward="false" selection-start-line="1105" selection-start-column="41" selection-end-line="1105" selection-end-column="41" />
+          <folding>
+            <marker date="1515600827525" expanded="true" signature="92879:92900" ph="SELECT * FRO... patents" />
+            <marker date="1515600827525" expanded="true" signature="93844:93884" ph="SELECT * FRO... researchgrant" />
+            <marker date="1515600827525" expanded="true" signature="94726:94766" ph="SELECT * FRO... researchgrant" />
+            <marker date="1515600827525" expanded="true" signature="95855:95895" ph="SELECT * FRO... researchgrant" />
           </folding>
         </state>
       </provider>

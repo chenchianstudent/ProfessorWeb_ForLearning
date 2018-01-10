@@ -1027,29 +1027,29 @@
 
                     <h2 class="title">專利／Patents</h2>
                     <p></p>
+                    <?php
+                    include("mysql_connect.inc.php");
+                    mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                    mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                    $poi=mysqli_select_db("patents");//我要從member這個資料庫撈資料
+                    mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                    $data=mysqli_query($link,"SELECT * FROM patents");//從member中選取全部(*)的資料
+
+                    ?>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                            <?php
+                            for($i=1;$i<=mysqli_num_rows($data);$i++)
+                            { $rows=mysqli_fetch_row($data);
+                            ?>
                             <tbody><tr class="odd">
-                                <td width="5%">1</td>
-                                <td>植基於類神經網路之數位浮水印技術，發明專利，台灣，發明第145485號，2002.10.20 ~ 2020.7.18</td>
+                                <td width="5%"><?php echo $i?></td>
+                                <td><?php echo $rows[1]?>,<?php echo $rows[2]?>,<?php echo $rows[3]?>,<?php echo $rows[4]?></td>
                             </tr>
-                            <tr>
-                                <td width="5%">2</td>
-                                <td>具強韌性之多媒體數位浮水印技術，，台灣，TW00451170，2001.8.1 ~ 2019.7.18</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">3</td>
-                                <td>特徵導向式多媒體數位浮水印技術，發明專利，台灣，發明第140057號，2001.8.1 ~ 2019.7.18</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">4</td>
-                                <td>具雙重驗證功能之端對端無線通訊安全協定，發明專利，台灣，發明第140313號，2001.8.1 ~ 2019.7.18</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">5</td>
-                                <td>用於數位影像檔或數位聲音檔之加密裝置，發明專利，台灣，發明第103202號，1999.5.11 ~ 2017.11.27</td>
-                            </tr>
-                            </tbody></table>
+                            <?php }?>
+
+
+                        </table>
                         <p>&nbsp;</p>
                     </div>
 
