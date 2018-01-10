@@ -167,16 +167,31 @@ if($_SESSION['name'] != null){
                                 <td width="5%"><?php echo $i?></td>
                                 <td>學年度:<?php echo $rows[2]?><br>計畫名稱:<?php echo $rows[1]?><br>指導教授: <?php echo $rows[3]?><br>學生姓名:<?php echo $rows[4]?><br></td>
                                 <td width="5%" align="right">
+                                    <p>
+                                        <?php
+                                        $sql = "SELECT * FROM studentsproject01 where number";
+                                        $result = mysqli_query($link,$sql);
+                                        $row = mysqli_fetch_row($result);
+                                        echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate＿finish.php\">";
+                                        echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                        echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                        echo "</form>";
+
+                                        ?>
+                                    </p>
+                                    <p>
                                     <?php
                                     $sql = "SELECT * FROM studentsproject01 where number";
                                     $result = mysqli_query($link,$sql);
                                     $row = mysqli_fetch_row($result);
                                     echo "<form name=\"form\" method=\"post\" action=\"studentprojectdelete_finish.php\">";
-                                    echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" /><br>";
+                                    echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                     echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
                                     echo "</form>";
 
                                     ?>
+                                    </p>
+
 
                                 </td>
                             </tr>
@@ -185,7 +200,7 @@ if($_SESSION['name'] != null){
                                 <td width="5%">修改</td>
                                 <td>
                                     <?php
-                                    $sql = "SELECT * FROM studentsproject where number";
+                                    $sql = "SELECT * FROM studentsproject01 where number";
                                     $result = mysqli_query($link,$sql);
                                     $row = mysqli_fetch_row($result);
                                     echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate＿finish.php\">";
