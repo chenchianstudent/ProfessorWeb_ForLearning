@@ -1122,233 +1122,74 @@ if($_SESSION['name'] != null){
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
 
-                            <tbody><tr class="odd">
+                            <?php
+                            include("mysql_connect.inc.php");
+                            mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                            mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                            $poi=mysqli_select_db("courseinformation");//我要從member這個資料庫撈資料
+                            mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                            $data=mysqli_query($link,"SELECT * FROM courseinformation");//從member中選取全部(*)的資料
 
-                                <td width="5%">1</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE200052&amp;mCos_Class=A&amp;mSmtr=1061')"> (研究所碩士班    )論文研討(一)【第106學年第1學期：A班】<br>學習及運用新知</a>
-                                </td>
-                            </tr>
+                            ?>
+                            <div class="entry">
+                                <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                                    <?php
+                                    for($i=1;$i<=mysqli_num_rows($data);$i++)
+                                    { $rows=mysqli_fetch_row($data);
+                                    ?>
+                                    <tbody><tr class="odd">
+                                        <td width="5%"><?php echo $i?></td>
+                                        <td><a href="#" onclick="window.open('<?php echo $rows[3]?>')"><?php echo $rows[1]?></a><br><?php echo $rows[2]?></td>
+                                        <td width="5%" align="right">
+                                            <p>
+                                                <?php
+                                                $sql = "SELECT * FROM courseinformation where number";
+                                                $result = mysqli_query($link,$sql);
+                                                $row = mysqli_fetch_row($result);
+                                                echo "<form name=\"form\" method=\"post\" action=\"patentsupdate.php\">";
+                                                echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                                echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                                echo "</form>";
 
-                            <tr>
+                                                ?>
+                                            </p>
+                                            <p>
+                                                <?php
+                                                $sql = "SELECT * FROM courseinformation where number";
+                                                $result = mysqli_query($link,$sql);
+                                                $row = mysqli_fetch_row($result);
+                                                echo "<form name=\"form\" method=\"post\" action=\"patentsdelete_finish.php\">";
+                                                echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                                echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                                echo "</form>";
 
-                                <td width="5%">2</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE100001&amp;mCos_Class=A&amp;mSmtr=1061')"> (研究所博士班    )作業系統【第106學年第1學期：A班】<br>作業系統是介於使用者與電腦硬體間的介面，所有電腦都會透過作業系統來做電腦資源管理，其中包括CPU、記憶體、及磁碟機管理。本課程主要傳授作業系統之概論、技術、安全、及其理論。</a>
-                                </td>
-                            </tr>
+                                                ?>
+                                            </p>
+                                        </td>
 
-                            <tr class="odd">
+                                    </tr>
+                                    <?php }?>
+                                    <tr class="odd">
+                                        <td width="5%">新增</td>
+                                        <td>
+                                            <?php
+                                            $sql = "SELECT * FROM courseinformation where number";
+                                            $result = mysqli_query($link,$sql);
+                                            $row = mysqli_fetch_row($result);
+                                            echo "<form name=\"form\" method=\"post\" action=\"patentsregister_finish.php\">";
+                                            //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                                            echo "課程名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+                                            echo "備註：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+                                            echo "網址：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+                                            echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                            echo "</form>";
 
-                                <td width="5%">3</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE200067&amp;mCos_Class=A&amp;mSmtr=1052')"> (研究所碩士班    )論文研討(二)【第105學年第2學期：A班】<br>1.使學生瞭解科技論文之要素。
-                                        2.訓練研究生研讀論文之能力，及上台報告之台風。
-                                        3.培養研究生具有獨立思考與理性批判問題的能力，從事正確的抉擇。</a>
-                                </td>
-                            </tr>
+                                            ?>
+                                        </td>
+                                        <td></td>
+                                    </tr>
 
-                            <tr>
-
-                                <td width="5%">4</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE200016&amp;mCos_Class=A&amp;mSmtr=1052')"> (研究所碩士班    )研究論文寫作【第105學年第2學期：A班】<br>提升研究生英文科技論文閱讀、寫作、與簡報能力。並灌輸其學術倫理概念。</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">5</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE200052&amp;mCos_Class=A&amp;mSmtr=1051')"> (研究所碩士班    )論文研討(一)【第105學年第1學期：A班】<br>學習及運用新知</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">6</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE100001&amp;mCos_Class=A&amp;mSmtr=1051')"> (研究所博士班    )作業系統【第105學年第1學期：A班】<br>作業系統是介於使用者與電腦硬體間的介面，所有電腦都會透過作業系統來做電腦資源管理，其中包括CPU、記憶體、及磁碟機管理。本課程主要傳授作業系統之概論、技術、安全、及其理論。</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">7</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE200202&amp;mCos_Class=A&amp;mSmtr=1042')"> (研究所碩士班    )研究論文寫作【第104學年第2學期：A班】<br>提升研究生英文科技論文閱讀、寫作、與簡報能力。並灌輸其學術倫理概念。</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">8</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE200067&amp;mCos_Class=A&amp;mSmtr=1042')"> (研究所碩士班    )論文研討(二)【第104學年第2學期：A班】<br>使學生瞭解科技論文之要素</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">9</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE200052&amp;mCos_Class=A&amp;mSmtr=1041')"> (研究所碩士班    )論文研討(一)【第104學年第1學期：A班】<br>學習及運用新知</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">10</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=EE100001&amp;mCos_Class=A&amp;mSmtr=1041')"> (研究所博士班    )作業系統【第104學年第1學期：A班】<br>作業系統是介於使用者與電腦硬體間的介面，所有電腦都會透過作業系統來做電腦資源管理，其中包括CPU、記憶體、及磁碟機管理。本課程主要傳授作業系統之概論、技術、安全、及其理論。</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">11</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=65M00202&amp;mCos_Class=A&amp;mSmtr=1032')"> (研究所碩士班    )研究論文寫作【第103學年第2學期：A班】<br>提升研究生科技論文閱讀,寫作與簡報能力。</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">12</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=65M00067&amp;mCos_Class=A&amp;mSmtr=1032')"> (研究所碩士班    )論文研討(二)【第103學年第2學期：A班】<br>探討資工領域方面的研究技巧</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">13</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=67D00001&amp;mCos_Class=A&amp;mSmtr=1031')"> (研究所博士班    )作業系統【第103學年第1學期：A班】<br>作業系統是介於使用者與電腦硬體間的介面，所有電腦都會透過作業系統來做電腦資源管理，其中包括CPU、記憶體、及磁碟機管理。本課程主要傳授作業系統之概論、技術、安全、及其理論。</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">14</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=GRG00166&amp;mCos_Class=A&amp;mSmtr=1022')"> (大學日間部      )資訊與應用【第102學年第2學期：A班】<br></a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">15</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=65M00016&amp;mCos_Class=A&amp;mSmtr=1022')"> (研究所碩士班    )研究論文寫作【第102學年第2學期：A班】<br>提升研究生英文科技論文閱讀,寫作與簡報能力。</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">16</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=67D00001&amp;mCos_Class=A&amp;mSmtr=1021')"> (研究所博士班    )作業系統【第102學年第1學期：A班】<br>作業系統是介於使用者與電腦硬體間的介面，所有電腦都會透過作業系統來做電腦資源管理，其中包括CPU、記憶體、及磁碟機管理。本課程主要傳授作業系統之概論、技術、安全、及其理論。</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">17</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=GRG00166&amp;mCos_Class=A&amp;mSmtr=1012')"> (大學日間部      )資訊與應用【第101學年第2學期：A班】<br></a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">18</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=GRG00093&amp;mCos_Class=F&amp;mSmtr=1012')"> (大學日間部      )資訊與科技【第101學年第2學期：F班】<br>使學生理解電腦技術的演進及基本電腦技能。</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">19</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=GRG00093&amp;mCos_Class=F&amp;mSmtr=1012')"> (大學日間部      )資訊與科技【第101學年第2學期：F班】<br>使學生理解電腦技術的演進及基本電腦技能。</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">20</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=65M00024&amp;mCos_Class=A&amp;mSmtr=1012')"> (研究所碩士班    )專題研討(二)【第101學年第2學期：A班】<br>學習及運用新知</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">21</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=GOG00008&amp;mCos_Class=A&amp;mSmtr=1011')"> (大學日間部      )大學之路-2【第101學年第1學期：A班】<br>引導大學新鮮人於大學生活上快樂且正確學習、適應環境、激發潛能、培養合群互助精神，並於大學之路上儘早建立自我生涯規劃的藍圖。</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">22</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=67D00001&amp;mCos_Class=A&amp;mSmtr=1011')"> (研究所博士班    )作業系統【第101學年第1學期：A班】<br>作業系統是介於使用者與電腦硬體間的介面，所有電腦都會透過作業系統來做電腦資源管理，其中包括CPU、記憶體、及磁碟機管理。本課程主要傳授作業系統之概論、技術、安全、及其理論。</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">23</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=65M00105&amp;mCos_Class=A&amp;mSmtr=1011')"> (研究所碩士班    )專題研討(一)【第101學年第1學期：A班】<br>學習及運用新知</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">24</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=GRG00093&amp;mCos_Class=D&amp;mSmtr=1002')"> (大學日間部      )資訊與科技【第100學年第2學期：D班】<br>使學生理解電腦技術的演進及基本電腦技能。</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">25</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=GRG00093&amp;mCos_Class=D&amp;mSmtr=1002')"> (大學日間部      )資訊與科技【第100學年第2學期：D班】<br>使學生理解電腦技術的演進及基本電腦技能。</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">26</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=67D00001&amp;mCos_Class=A&amp;mSmtr=1001')"> (研究所博士班    )作業系統【第100學年第1學期：A班】<br>作業系統是介於使用者與電腦硬體間的介面，所有電腦都會透過作業系統來做電腦資源管理，其中包括CPU、記憶體、及磁碟機管理。本課程主要傳授作業系統之概論、技術、安全、及其理論。</a>
-                                </td>
-                            </tr>
-
-                            <tr class="odd">
-
-                                <td width="5%">27</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=65M00166&amp;mCos_Class=A&amp;mSmtr=0992')"> (研究所碩士班    )雲端計算【第099學年第2學期：A班】<br>雲端計算是近年來是一種基於網際網路的計算方式，它的一個重要應用是藉由分散且快速的運算能力來處理及分析大量的資料，並且可以從中取得所需的資訊或知識，透過這種方式，共享的軟硬體資源和資訊可以按照需要提供給電腦或其他裝置。本課程主要傳授雲端計算之概論、技術、安全、及其應用。</a>
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td width="5%">28</td>
-                                <td>
-                                    <a href="#" onclick="window.open('http://webs.asia.edu.tw/courseinfo/course_outline_S2.asp?mCos_id=64U00282&amp;mCos_Class=A&amp;mSmtr=0992')"> (大學日間部      )雲端計算【第099學年第2學期：A班】<br></a>
-                                </td>
-                            </tr>
-
-                            </tbody></table>
+                                    </tbody></table>
                         <p>&nbsp;</p>
                     </div>
                     <p></p>
