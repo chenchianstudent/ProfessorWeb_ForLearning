@@ -10,15 +10,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 include("mysql_connect.inc.php");
-
+$id=$_POST['id'];
 $saying = $_POST['pw'];
 //紅色字體為判斷密碼是否填寫正確
 if($_SESSION['name'] != null)
 {
-    $id = $_SESSION['name'];
+
 
     //更新資料庫資料語法
-    $sql = "update titlename2 set saying='$saying' where id=1";
+    $sql = "update titlename2 set saying='$saying' where number=$id";
 
     if(mysqli_query($link,$sql))
     {

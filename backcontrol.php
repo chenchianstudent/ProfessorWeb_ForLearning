@@ -26,6 +26,7 @@ if($_SESSION['name'] != null){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>黃明祥教授網頁二代</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
@@ -118,8 +119,8 @@ if($_SESSION['name'] != null){
             ?>
            <?php echo "<form name=\"form\" method=\"post\" action=\"titleupdate_finish.php\">";
                 echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" /><br>";
-                echo "名言：<input type=\"text\" name=\"pw\" value=\"$row[2]\"/><br>";
-                echo "<input type=\"submit\" name=\"button\" value=\"修改名言\" />";
+                echo "名言：<input type=\"text\" name=\"pw\" value=\"$row[2]\" size='50'/>";
+                echo "<input class='poi' type=\"submit\" name=\"button\" value=\"修改名言\" />";
                 echo "</form>"; ?>
 <!--            --><?php //echo $rows[1]?>
 <!--            <button type="submit"><a href="titleupdate.php">修改名言</a></button>-->

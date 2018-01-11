@@ -106,7 +106,7 @@ $rows=mysqli_fetch_row($data);
         </div>
         <div class="col-sm-8 text-left">
             <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
-            <?php echo $rows[1]?>
+            <?php echo $rows[2]?>
             <hr>
             <h3><span style="font-size: 1.2em">聯絡方式</span></h3>
             <p><span style="font-size:1em ">●tel:+886-4-23323456  分機：1864</span></p>
