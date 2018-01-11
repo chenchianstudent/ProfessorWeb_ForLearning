@@ -1146,7 +1146,7 @@ if($_SESSION['name'] != null){
                                                 $sql = "SELECT * FROM courseinformation where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
-                                                echo "<form name=\"form\" method=\"post\" action=\"patentsupdate.php\">";
+                                                echo "<form name=\"form\" method=\"post\" action=\"courseinformationupdate.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                                                 echo "</form>";
@@ -1158,7 +1158,7 @@ if($_SESSION['name'] != null){
                                                 $sql = "SELECT * FROM courseinformation where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
-                                                echo "<form name=\"form\" method=\"post\" action=\"patentsdelete_finish.php\">";
+                                                echo "<form name=\"form\" method=\"post\" action=\"courseinformationdelete_finish.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                                 echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
                                                 echo "</form>";
@@ -1176,7 +1176,7 @@ if($_SESSION['name'] != null){
                                             $sql = "SELECT * FROM courseinformation where number";
                                             $result = mysqli_query($link,$sql);
                                             $row = mysqli_fetch_row($result);
-                                            echo "<form name=\"form\" method=\"post\" action=\"patentsregister_finish.php\">";
+                                            echo "<form name=\"form\" method=\"post\" action=\"courseinformationregister_finish.php\">";
                                             //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
                                             echo "課程名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
                                             echo "備註：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
