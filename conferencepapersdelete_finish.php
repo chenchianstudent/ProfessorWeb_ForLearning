@@ -14,7 +14,7 @@ $id = $_POST['id'];
 if($_SESSION['name'] != null)
 {
     //刪除資料庫資料語法
-    $sql = "delete from thesisadvisor where number='$id'";
+    $sql = "delete from conferencepapers where number='$id'";
     if(mysqli_query($link,$sql))
     {
         echo '刪除成功!';

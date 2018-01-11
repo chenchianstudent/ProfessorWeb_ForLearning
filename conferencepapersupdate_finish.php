@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: USER
  * Date: 2017/11/22
- * Time: 上午 10:49
+ * Time: 上午 10:47
  */
 ?>
 <?php session_start(); ?>
@@ -11,18 +11,26 @@
 <?php
 include("mysql_connect.inc.php");
 $id = $_POST['id'];
+$pw = $_POST['pw'];
+$telephone = $_POST['telephone'];
+$address = $_POST['address'];
+$other = $_POST['other'];
+$other1 = $_POST['other1'];
+//紅色字體為判斷密碼是否填寫正確
 if($_SESSION['name'] != null)
 {
-    //刪除資料庫資料語法
-    $sql = "delete from thesisadvisor where number='$id'";
+    //更新資料庫資料語法
+    $sql = "update conferencepapers set cname='$pw', other='$telephone', place='$address',time='$other',name='$other1' where number='$id'";
+
+
     if(mysqli_query($link,$sql))
     {
-        echo '刪除成功!';
+        echo '修改成功!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=control3.php>';
     }
     else
     {
-        echo '刪除失敗!';
+        echo '修改失敗!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=control3.php>';
     }
 }
@@ -32,4 +40,3 @@ else
     echo '<meta http-equiv=REFRESH CONTENT=2;url=pweb2.php>';
 }
 ?>
-*/
