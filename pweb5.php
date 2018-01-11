@@ -15,7 +15,7 @@
         }
 
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 450px}
+        .row.content {height: 100%}
 
         /* Set gray background color and 100% height */
         .sidenav {
@@ -144,8 +144,8 @@
 </nav>
 
 <div class="container-fluid text-center">
-    <div class="row content" style="background-color: #ffb907">
-        <div class="col-sm-2 sidenav" style="background-color:  #9afff0">
+    <div class="row content" style="background-color: #7ceeff">
+        <div class="col-sm-2 sidenav" style="background-color:  #7ceeff">
         </div>
         <div class="col-sm-8 text-left">
             <h1 align="center" style="font-size:3.5em "><b>學生名單</b></h1>
@@ -174,7 +174,7 @@
                 </tbody></table>
 
         </div>
-        <div class="col-sm-2 sidenav" style="background-color: #9afff0">
+        <div class="col-sm-2 sidenav" style="background-color: #7ceeff">
         </div>
     </div>
 </div>

@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
@@ -166,34 +167,32 @@ if($_SESSION['name'] != null){
                             <tbody><tr >
                                 <td width="5%"><?php echo $i?></td>
                                 <td>學年度:<?php echo $rows[2]?><br>計畫名稱:<?php echo $rows[1]?><br>指導教授: <?php echo $rows[3]?><br>學生姓名:<?php echo $rows[4]?><br></td>
-                                <td width="5%" align="right">
-                                    <p>
+                                <td width="5%" align="right" colspan="2">
+
                                         <?php
                                         $sql = "SELECT * FROM studentsproject01 where number";
                                         $result = mysqli_query($link,$sql);
                                         $row = mysqli_fetch_row($result);
                                         echo "<form name=\"form\" method=\"post\" action=\"studentprojectupdate.php\">";
                                         echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                        echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                        echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                         echo "</form>";
 
                                         ?>
-                                    </p>
-                                    <p>
-                                    <?php
-                                    $sql = "SELECT * FROM studentsproject01 where number";
-                                    $result = mysqli_query($link,$sql);
-                                    $row = mysqli_fetch_row($result);
-                                    echo "<form name=\"form\" method=\"post\" action=\"studentprojectdelete_finish.php\">";
-                                    echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                    echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
-                                    echo "</form>";
 
-                                    ?>
-                                    </p>
+                                        <?php
+                                        $sql = "SELECT * FROM studentsproject01 where number";
+                                        $result = mysqli_query($link,$sql);
+                                        $row = mysqli_fetch_row($result);
+                                        echo "<form name=\"form\" method=\"post\" action=\"studentprojectdelete_finish.php\">";
+                                        echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                        echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                        echo "</form>";
 
+                                        ?>
 
                                 </td>
+
                             </tr>
                             <?php }?>
                             <tr class="odd">
@@ -205,11 +204,11 @@ if($_SESSION['name'] != null){
                                     $row = mysqli_fetch_row($result);
                                     echo "<form name=\"form\" method=\"post\" action=\"studentprojectregister_finish.php\">";
                                     //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
-                                    echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+                                    echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"*\"/> <br>";
                                     echo "學年度：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
                                     echo "教授名稱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
                                     echo "學生姓名：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
-                                    echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                    echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
                                     echo "</form>";
 
                                     ?>
@@ -250,30 +249,29 @@ if($_SESSION['name'] != null){
                                 <td width="5%"><?php echo $i?></td>
                                 <td><?php echo $rows[1]?><br><?php echo $rows[2]?><br><?php echo $rows[3]?><br><?php echo $rows[4]?><br></td>
                                 <td width="5%" align="right">
-                                    <p>
+
                                         <?php
                                         $sql = "SELECT * FROM thesisadvisor where number";
                                         $result = mysqli_query($link,$sql);
                                         $row = mysqli_fetch_row($result);
                                         echo "<form name=\"form\" method=\"post\" action=\"thesisadvisorupdate.php\">";
                                         echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                        echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                        echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                         echo "</form>";
 
                                         ?>
-                                    </p>
-                                    <p>
+
                                         <?php
                                         $sql = "SELECT * FROM thesisadvisor where number";
                                         $result = mysqli_query($link,$sql);
                                         $row = mysqli_fetch_row($result);
                                         echo "<form name=\"form\" method=\"post\" action=\"thesisadvisordelete_finish.php\">";
                                         echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                        echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                        echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                                         echo "</form>";
 
                                         ?>
-                                    </p>
+
 
 
                                 </td>
@@ -290,8 +288,8 @@ if($_SESSION['name'] != null){
                                     //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
                                     echo "學生姓名：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
                                     echo "論文名稱<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
-                                    echo "英文論文名稱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
-                                    echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                    echo "英文論文名稱：<input type=\"text\" name=\"address\" value=\"*\"/> <br>";
+                                    echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
                                     echo "</form>";
 
                                     ?>
@@ -339,30 +337,29 @@ if($_SESSION['name'] != null){
                                             <?php echo $rows[5]?><br>
                                         </td>
                                         <td width="5%" align="right">
-                                            <p>
+
                                                 <?php
                                                 $sql = "SELECT * FROM conferencepapers where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
                                                 echo "<form name=\"form\" method=\"post\" action=\"conferencepapersupdate.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                                echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                                echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                                 echo "</form>";
 
                                                 ?>
-                                            </p>
-                                            <p>
+
                                                 <?php
                                                 $sql = "SELECT * FROM conferencepapers where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
                                                 echo "<form name=\"form\" method=\"post\" action=\"conferencepapersdelete_finish.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                                echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                                echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                                                 echo "</form>";
 
                                                 ?>
-                                            </p>
+
                                         </td>
 
                                     </tr>
@@ -381,7 +378,7 @@ if($_SESSION['name'] != null){
                                             echo "發表地點：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
                                             echo "時間：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
                                             echo "姓名：<input type=\"text\" name=\"other1\" value=\"*\" /> <br>";
-                                            echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
                                             echo "</form>";
 
 
@@ -424,30 +421,29 @@ if($_SESSION['name'] != null){
                                 <td width="5%"><?php echo $i?></td>
                                 <td><?php echo $rows[1]?>,<?php echo $rows[2]?>,<?php echo $rows[3]?>,<?php echo $rows[4]?>,<?php echo $rows[5]?>,<?php echo $rows[6]?></td>
                                  <td width="5%" align="right">
-                                     <p>
+
                                          <?php
                                          $sql = "SELECT * FROM researchgrant where number";
                                          $result = mysqli_query($link,$sql);
                                          $row = mysqli_fetch_row($result);
                                          echo "<form name=\"form\" method=\"post\" action=\"researchgrantupdate.php\">";
                                          echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                         echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                         echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                          echo "</form>";
 
                                          ?>
-                                     </p>
-                                     <p>
+
                                          <?php
                                          $sql = "SELECT * FROM researchgrant where number";
                                          $result = mysqli_query($link,$sql);
                                          $row = mysqli_fetch_row($result);
                                          echo "<form name=\"form\" method=\"post\" action=\"researchgrantdelete_finish.php\">";
                                          echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                         echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                         echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                                          echo "</form>";
 
                                          ?>
-                                     </p>
+
 
 
                                  </td>
@@ -466,9 +462,9 @@ if($_SESSION['name'] != null){
                                      echo "編碼：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
                                      echo "參與人員：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
                                      echo "研究處：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
-                                     echo "計畫名稱：<input type=\"text\" name=\"other1\" value=\"*\" /> <br>";
+                                     echo "計畫名稱：<input type=\"text\" name=\"other1\" value=\"*\" size='50' /> <br>";
                                      echo "時間：<input type=\"text\" name=\"time\" value=\"*\" /> <br>";
-                                     echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                     echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
                                      echo "</form>";
 
                                      ?>

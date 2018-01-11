@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
@@ -165,30 +166,29 @@ if($_SESSION['name'] != null){
 
                                         </td>
                                         <td width="5%" align="right">
-                                            <p>
+
                                                 <?php
                                                 $sql = "SELECT * FROM journalpapers where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
                                                 echo "<form name=\"form\" method=\"post\" action=\"journalpapersupdate.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                                echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                                echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                                 echo "</form>";
 
                                                 ?>
-                                            </p>
-                                            <p>
+
                                                 <?php
                                                 $sql = "SELECT * FROM journalpapers where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
                                                 echo "<form name=\"form\" method=\"post\" action=\"journalpapersdelete_finish.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                                echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                                echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                                                 echo "</form>";
 
                                                 ?>
-                                            </p>
+
                                         </td>
 
                                     </tr>
@@ -208,7 +208,7 @@ if($_SESSION['name'] != null){
                                             echo "發表人：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
                                             echo "時間：<input type=\"text\" name=\"other1\" value=\"*\" /> <br>";
                                             echo "編碼：<input type=\"text\" name=\"other2\" value=\"*\" /> <br>";
-                                            echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
                                             echo "</form>";
 
 
@@ -251,30 +251,29 @@ if($_SESSION['name'] != null){
                                         <td width="5%"><?php echo $i?></td>
                                         <td><?php echo $rows[1]?>,<?php echo $rows[2]?>,<?php echo $rows[3]?>,<?php echo $rows[4]?></td>
                                         <td width="5%" align="right">
-                                            <p>
+
                                                 <?php
                                                 $sql = "SELECT * FROM patents where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
                                                 echo "<form name=\"form\" method=\"post\" action=\"patentsupdate.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                                echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                                echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                                 echo "</form>";
 
                                                 ?>
-                                            </p>
-                                            <p>
+
                                                 <?php
                                                 $sql = "SELECT * FROM patents where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
                                                 echo "<form name=\"form\" method=\"post\" action=\"patentsdelete_finish.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                                echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                                echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                                                 echo "</form>";
 
                                                 ?>
-                                            </p>
+
                                         </td>
 
                                     </tr>
@@ -292,7 +291,7 @@ if($_SESSION['name'] != null){
                                             echo "申請地點：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
                                             echo "專利號：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
                                             echo "時間：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
-                                            echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
                                             echo "</form>";
 
                                             ?>
@@ -338,30 +337,28 @@ if($_SESSION['name'] != null){
                                         <td width="5%"><?php echo $i?></td>
                                         <td><a href="#" onclick="window.open('<?php echo $rows[3]?>')"><?php echo $rows[1]?></a><br><?php echo $rows[2]?></td>
                                         <td width="5%" align="right">
-                                            <p>
+
                                                 <?php
                                                 $sql = "SELECT * FROM courseinformation where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
                                                 echo "<form name=\"form\" method=\"post\" action=\"courseinformationupdate.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                                echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                                echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                                 echo "</form>";
 
                                                 ?>
-                                            </p>
-                                            <p>
                                                 <?php
                                                 $sql = "SELECT * FROM courseinformation where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
                                                 echo "<form name=\"form\" method=\"post\" action=\"courseinformationdelete_finish.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                                echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                                echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                                                 echo "</form>";
 
                                                 ?>
-                                            </p>
+
                                         </td>
 
                                     </tr>
@@ -378,7 +375,7 @@ if($_SESSION['name'] != null){
                                             echo "課程名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
                                             echo "備註：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
                                             echo "網址：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
-                                            echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
                                             echo "</form>";
 
                                             ?>
@@ -421,30 +418,29 @@ if($_SESSION['name'] != null){
                                     <td width="5%"><?php echo $i?></td>
                                     <td><?php echo $rows[1]?>,<?php echo $rows[2]?>,<?php echo $rows[3]?></td>
                                     <td width="5%" align="right">
-                                        <p>
+
                                             <?php
                                             $sql = "SELECT * FROM awards where number";
                                             $result = mysqli_query($link,$sql);
                                             $row = mysqli_fetch_row($result);
                                             echo "<form name=\"form\" method=\"post\" action=\"awardsupdate.php\">";
                                             echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                            echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                             echo "</form>";
 
                                             ?>
-                                        </p>
-                                        <p>
+
                                             <?php
                                             $sql = "SELECT * FROM awards where number";
                                             $result = mysqli_query($link,$sql);
                                             $row = mysqli_fetch_row($result);
                                             echo "<form name=\"form\" method=\"post\" action=\"awardsdelete_finish.php\">";
                                             echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                                            echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                            echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                                             echo "</form>";
 
                                             ?>
-                                        </p>
+
                                     </td>
 
                                 </tr>
@@ -461,7 +457,7 @@ if($_SESSION['name'] != null){
                                         echo "獲獎名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
                                         echo "獲獎地點：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
                                         echo "時間：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
-                                        echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+                                        echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
                                         echo "</form>";
 
                                         ?>

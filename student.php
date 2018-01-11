@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
@@ -15,7 +16,7 @@
         }
 
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {height: 450px}
+        .row.content {height: 100%}
 
         /* Set gray background color and 100% height */
         .sidenav {
@@ -152,7 +153,7 @@ if($_SESSION['name'] != null){
 
 <div class="container-fluid text-center">
     <div class="row content" style="background-color: #ffb907">
-        <div class="col-sm-2 sidenav" style="background-color:  #9afff0">
+        <div class="col-sm-2 sidenav" style="background-color:  #ffb907">
         </div>
         <div class="col-sm-8 text-left">
             <h1 align="center">學生名單</h1>
@@ -180,7 +181,7 @@ if($_SESSION['name'] != null){
                             $row = mysqli_fetch_row($result);
                             echo "<form name=\"form\" method=\"post\" action=\"studentupdate.php\">";
                             echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                            echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
+                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                             echo "</form>";
 
                             ?>
@@ -192,7 +193,7 @@ if($_SESSION['name'] != null){
                             $row = mysqli_fetch_row($result);
                             echo "<form name=\"form\" method=\"post\" action=\"studentdelete_finish.php\">";
                             echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
-                            echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
+                            echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                             echo "</form>";
 
                             ?>
@@ -205,7 +206,7 @@ if($_SESSION['name'] != null){
                 </tbody></table>
 
         </div>
-        <div class="col-sm-2 sidenav" style="background-color: #9afff0">
+        <div class="col-sm-2 sidenav" style="background-color: #ffb907">
             <h2 align="center">新增</h2>
             <div class="well" style="background-color: #fffaad">
             <?php
@@ -218,7 +219,7 @@ if($_SESSION['name'] != null){
             echo "學年度：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
             echo "信箱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
             echo "連絡電話：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
-            echo "<input type=\"submit\" name=\"button\" value=\"確定\" />";
+            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
             echo "</form>";
 
             ?>
