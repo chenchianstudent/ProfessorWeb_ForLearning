@@ -141,7 +141,7 @@ if($_SESSION['name'] != null){
 
                     <h2 class="title">期刊論文／Journal Papers</h2>
                     <p></p>
-                    <div class="entry">
+
                         <?php
                             include("mysql_connect.inc.php");
                             mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
@@ -170,7 +170,7 @@ if($_SESSION['name'] != null){
                                                 $sql = "SELECT * FROM journalpapers where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
-                                                echo "<form name=\"form\" method=\"post\" action=\"conferencepapersupdate.php\">";
+                                                echo "<form name=\"form\" method=\"post\" action=\"journalpapersupdate.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                                 echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                                                 echo "</form>";
@@ -182,7 +182,7 @@ if($_SESSION['name'] != null){
                                                 $sql = "SELECT * FROM journalpapers where number";
                                                 $result = mysqli_query($link,$sql);
                                                 $row = mysqli_fetch_row($result);
-                                                echo "<form name=\"form\" method=\"post\" action=\"conferencepapersdelete_finish.php\">";
+                                                echo "<form name=\"form\" method=\"post\" action=\"journalpapersdelete_finish.php\">";
                                                 echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                                 echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
                                                 echo "</form>";

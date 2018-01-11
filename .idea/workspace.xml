@@ -28,8 +28,8 @@
       <file leaf-file-name="control3.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="390" column="41" lean-forward="true" selection-start-line="317" selection-start-column="0" selection-end-line="390" selection-end-column="41" />
+            <state relative-caret-position="-308">
+              <caret line="125" column="10" lean-forward="false" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
               <folding>
                 <marker date="1515659078241" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
                 <marker date="1515659078241" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
@@ -67,8 +67,8 @@
       <file leaf-file-name="researchgrantupdate_finish.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/researchgrantupdate_finish.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="26" column="32" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <marker date="1515598706071" expanded="true" signature="489:635" ph="update thesisadvisor... " />
               </folding>
@@ -76,101 +76,101 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="control4.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="patentsupdate_finish.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patentsupdate_finish.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <marker date="1515652232754" expanded="true" signature="437:534" ph="update researchgrant... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="control4.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/control4.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="202" column="123" lean-forward="false" selection-start-line="202" selection-start-column="123" selection-end-line="202" selection-end-column="123" />
+              <caret line="172" column="118" lean-forward="false" selection-start-line="172" selection-start-column="118" selection-end-line="172" selection-end-column="118" />
               <folding>
-                <marker date="1515660530054" expanded="true" signature="5288:5302" ph="SELECT * FRO... conferencepapers" />
-                <marker date="1515660530054" expanded="true" signature="5288:5315" ph="SELECT * FRO... journalpapers" />
-                <marker date="1515660530054" expanded="true" signature="6445:6485" ph="SELECT * FRO... conferencepapers" />
-                <marker date="1515660530054" expanded="true" signature="7330:7370" ph="SELECT * FRO... conferencepapers" />
-                <marker date="1515660530054" expanded="true" signature="8462:8502" ph="SELECT * FRO... conferencepapers" />
-                <marker date="1515660530054" expanded="true" signature="11037:11058" ph="SELECT * FRO... patents" />
-                <marker date="1515660530054" expanded="true" signature="12002:12036" ph="SELECT * FRO... researchgrant" />
-                <marker date="1515660530054" expanded="true" signature="12872:12906" ph="SELECT * FRO... researchgrant" />
-                <marker date="1515660530054" expanded="true" signature="13989:14023" ph="SELECT * FRO... researchgrant" />
-                <marker date="1515660530054" expanded="true" signature="16342:16373" ph="SELECT * FRO... courseinformation" />
-                <marker date="1515660530054" expanded="true" signature="17339:17383" ph="SELECT * FRO... courseinformation" />
-                <marker date="1515660530054" expanded="true" signature="18229:18273" ph="SELECT * FRO... courseinformation" />
-                <marker date="1515660530054" expanded="true" signature="19366:19410" ph="SELECT * FRO... courseinformation" />
-                <marker date="1515660530054" expanded="true" signature="21484:21504" ph="SELECT * FRO... awards" />
-                <marker date="1515660530054" expanded="true" signature="22370:22403" ph="SELECT * FRO... awards" />
-                <marker date="1515660530054" expanded="true" signature="23194:23227" ph="SELECT * FRO... awards" />
-                <marker date="1515660530054" expanded="true" signature="24245:24278" ph="SELECT * FRO... awards" />
+                <marker date="1515661648643" expanded="true" signature="5249:5263" ph="SELECT * FRO... conferencepapers" />
+                <marker date="1515661648643" expanded="true" signature="5249:5276" ph="SELECT * FRO... journalpapers" />
+                <marker date="1515661648643" expanded="true" signature="6406:6446" ph="SELECT * FRO... conferencepapers" />
+                <marker date="1515661648643" expanded="true" signature="7288:7328" ph="SELECT * FRO... conferencepapers" />
+                <marker date="1515661648643" expanded="true" signature="8417:8457" ph="SELECT * FRO... conferencepapers" />
+                <marker date="1515661648643" expanded="true" signature="10992:11013" ph="SELECT * FRO... patents" />
+                <marker date="1515661648643" expanded="true" signature="11957:11991" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515661648643" expanded="true" signature="12827:12861" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515661648643" expanded="true" signature="13944:13978" ph="SELECT * FRO... researchgrant" />
+                <marker date="1515661648643" expanded="true" signature="16297:16328" ph="SELECT * FRO... courseinformation" />
+                <marker date="1515661648643" expanded="true" signature="17294:17338" ph="SELECT * FRO... courseinformation" />
+                <marker date="1515661648643" expanded="true" signature="18184:18228" ph="SELECT * FRO... courseinformation" />
+                <marker date="1515661648643" expanded="true" signature="19321:19365" ph="SELECT * FRO... courseinformation" />
+                <marker date="1515661648643" expanded="true" signature="21439:21459" ph="SELECT * FRO... awards" />
+                <marker date="1515661648643" expanded="true" signature="22325:22358" ph="SELECT * FRO... awards" />
+                <marker date="1515661648643" expanded="true" signature="23149:23182" ph="SELECT * FRO... awards" />
+                <marker date="1515661648643" expanded="true" signature="24200:24233" ph="SELECT * FRO... awards" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="journalpapersregister_finish.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/journalpapersregister_finish.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-              <folding>
-                <marker date="1515660631750" expanded="true" signature="501:637" ph="insert into journalpapers... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conferencepapersupdate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conferencepapersupdate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-              <folding>
-                <marker date="1515658955012" expanded="true" signature="399:448" ph="SELECT * FRO... conferencepapers" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conferencepapersupdate_finish.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conferencepapersupdate_finish.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding>
-                <marker date="1515659032583" expanded="true" signature="465:590" ph="update conferencepapers... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conferencepapersregister_finish.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conferencepapersregister_finish.php">
+      <file leaf-file-name="journalpapersupdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/journalpapersupdate.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="675">
-              <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding>
-                <marker date="1515658713112" expanded="true" signature="475:595" ph="insert into conferencepapers... " />
+                <marker date="1515661525462" expanded="true" signature="399:445" ph="SELECT * FRO... journalpapers" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patentsregister_finish.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patentsregister_finish.php">
+      <file leaf-file-name="journalpapersupdate_finish.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/journalpapersupdate_finish.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="2" />
+            <state relative-caret-position="-24">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
-                <marker date="1515651804073" expanded="true" signature="449:541" ph="insert into patents... " />
+                <marker date="1515661627538" expanded="true" signature="493:631" ph="update journalpapers... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courseinformationregister_finish.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseinformationregister_finish.php">
+      <file leaf-file-name="courseinformationupdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseinformationupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="2" />
+            <state relative-caret-position="275">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
-                <marker date="1515655528757" expanded="true" signature="425:513" ph="insert into courseinformation... " />
+                <marker date="1515656250908" expanded="true" signature="399:449" ph="SELECT * FRO... courseinformation" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="patentsupdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patentsupdate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="22" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <marker date="1515652334138" expanded="true" signature="399:439" ph="SELECT * FRO... patents" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="journalpapersdelete_finish.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/journalpapersdelete_finish.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <folding>
+                <marker date="1515661053990" expanded="true" signature="309:353" ph="delete from journalpapers... " />
               </folding>
             </state>
           </provider>
@@ -193,9 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pweb-1.html" />
-        <option value="$PROJECT_DIR$/studentdelete_finish.php" />
-        <option value="$PROJECT_DIR$/student.php" />
         <option value="$PROJECT_DIR$/studentprojectupdate.php" />
         <option value="$PROJECT_DIR$/studentregister_finish.php" />
         <option value="$PROJECT_DIR$/studentupdate.php" />
@@ -242,8 +239,11 @@
         <option value="$PROJECT_DIR$/conferencepapersupdate.php" />
         <option value="$PROJECT_DIR$/conferencepapersupdate_finish.php" />
         <option value="$PROJECT_DIR$/control3.php" />
-        <option value="$PROJECT_DIR$/control4.php" />
         <option value="$PROJECT_DIR$/journalpapersregister_finish.php" />
+        <option value="$PROJECT_DIR$/journalpapersdelete_finish.php" />
+        <option value="$PROJECT_DIR$/journalpapersupdate.php" />
+        <option value="$PROJECT_DIR$/journalpapersupdate_finish.php" />
+        <option value="$PROJECT_DIR$/control4.php" />
       </list>
     </option>
   </component>
@@ -254,7 +254,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="250" />
     <option name="y" value="73" />
     <option name="width" value="1400" />
@@ -360,15 +360,15 @@
       <workItem from="1515491004450" duration="5767000" />
       <workItem from="1515568091069" duration="19000" />
       <workItem from="1515568123345" duration="17516000" />
-      <workItem from="1515650247762" duration="8608000" />
+      <workItem from="1515650247762" duration="9612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142504000" />
+    <option name="totallyTimeSpent" value="143508000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -454,27 +454,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ex20171108.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="24" column="61" lean-forward="false" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delete_finish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="31" column="54" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -666,26 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patentsupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <marker date="1515652334138" expanded="true" signature="399:439" ph="SELECT * FRO... patents" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patentsupdate_finish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <marker date="1515652232754" expanded="true" signature="437:534" ph="update researchgrant... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pweb4.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -737,32 +696,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseinformationupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="85" lean-forward="false" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
-          <folding>
-            <marker date="1515656250908" expanded="true" signature="399:449" ph="SELECT * FRO... courseinformation" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseinformationupdate_finish.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <marker date="1515656301579" expanded="true" signature="411:505" ph="update courseinformation... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseinformationdelete_finish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="31" column="54" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-          <folding>
-            <marker date="1515658460159" expanded="true" signature="309:357" ph="delete from courseinformation... " />
           </folding>
         </state>
       </provider>
@@ -837,32 +776,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/researchgrantupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <marker date="1515598327712" expanded="true" signature="399:445" ph="SELECT * FRO... researchgrant" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conferencepapersupdate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
             <marker date="1515658955012" expanded="true" signature="399:448" ph="SELECT * FRO... conferencepapers" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/researchgrantupdate_finish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1515598706071" expanded="true" signature="489:635" ph="update thesisadvisor... " />
           </folding>
         </state>
       </provider>
@@ -877,10 +796,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/patentsregister_finish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="2" />
+          <folding>
+            <marker date="1515651804073" expanded="true" signature="449:541" ph="insert into patents... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journalpapersregister_finish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <marker date="1515660631750" expanded="true" signature="501:637" ph="insert into journalpapers... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseinformationdelete_finish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="20" column="51" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="2" />
+          <folding>
+            <marker date="1515658460159" expanded="true" signature="309:357" ph="delete from courseinformation... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journalpapersdelete_finish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <marker date="1515661053990" expanded="true" signature="309:353" ph="delete from journalpapers... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/control3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="390" column="41" lean-forward="true" selection-start-line="317" selection-start-column="0" selection-end-line="390" selection-end-column="41" />
+        <state relative-caret-position="-308">
+          <caret line="125" column="10" lean-forward="false" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
           <folding>
             <marker date="1515659078241" expanded="true" signature="5472:5503" ph="SELECT * FRO... studentsproject01" />
             <marker date="1515659078241" expanded="true" signature="6357:6401" ph="SELECT * FRO... studentsproject01" />
@@ -902,12 +861,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patentsregister_finish.php">
+    <entry file="file://$PROJECT_DIR$/courseinformationupdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="2" />
+        <state relative-caret-position="275">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
-            <marker date="1515651804073" expanded="true" signature="449:541" ph="insert into patents... " />
+            <marker date="1515656250908" expanded="true" signature="399:449" ph="SELECT * FRO... courseinformation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patentsupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <marker date="1515652334138" expanded="true" signature="399:439" ph="SELECT * FRO... patents" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/researchgrantupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1515598327712" expanded="true" signature="399:445" ph="SELECT * FRO... researchgrant" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/researchgrantupdate_finish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1515598706071" expanded="true" signature="489:635" ph="update thesisadvisor... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patentsupdate_finish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1515652232754" expanded="true" signature="437:534" ph="update researchgrant... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journalpapersupdate_finish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <marker date="1515661627538" expanded="true" signature="493:631" ph="update journalpapers... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/journalpapersupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding>
+            <marker date="1515661525462" expanded="true" signature="399:445" ph="SELECT * FRO... journalpapers" />
           </folding>
         </state>
       </provider>
@@ -915,35 +934,25 @@
     <entry file="file://$PROJECT_DIR$/control4.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="202" column="123" lean-forward="false" selection-start-line="202" selection-start-column="123" selection-end-line="202" selection-end-column="123" />
+          <caret line="172" column="118" lean-forward="false" selection-start-line="172" selection-start-column="118" selection-end-line="172" selection-end-column="118" />
           <folding>
-            <marker date="1515660530054" expanded="true" signature="5288:5302" ph="SELECT * FRO... conferencepapers" />
-            <marker date="1515660530054" expanded="true" signature="5288:5315" ph="SELECT * FRO... journalpapers" />
-            <marker date="1515660530054" expanded="true" signature="6445:6485" ph="SELECT * FRO... conferencepapers" />
-            <marker date="1515660530054" expanded="true" signature="7330:7370" ph="SELECT * FRO... conferencepapers" />
-            <marker date="1515660530054" expanded="true" signature="8462:8502" ph="SELECT * FRO... conferencepapers" />
-            <marker date="1515660530054" expanded="true" signature="11037:11058" ph="SELECT * FRO... patents" />
-            <marker date="1515660530054" expanded="true" signature="12002:12036" ph="SELECT * FRO... researchgrant" />
-            <marker date="1515660530054" expanded="true" signature="12872:12906" ph="SELECT * FRO... researchgrant" />
-            <marker date="1515660530054" expanded="true" signature="13989:14023" ph="SELECT * FRO... researchgrant" />
-            <marker date="1515660530054" expanded="true" signature="16342:16373" ph="SELECT * FRO... courseinformation" />
-            <marker date="1515660530054" expanded="true" signature="17339:17383" ph="SELECT * FRO... courseinformation" />
-            <marker date="1515660530054" expanded="true" signature="18229:18273" ph="SELECT * FRO... courseinformation" />
-            <marker date="1515660530054" expanded="true" signature="19366:19410" ph="SELECT * FRO... courseinformation" />
-            <marker date="1515660530054" expanded="true" signature="21484:21504" ph="SELECT * FRO... awards" />
-            <marker date="1515660530054" expanded="true" signature="22370:22403" ph="SELECT * FRO... awards" />
-            <marker date="1515660530054" expanded="true" signature="23194:23227" ph="SELECT * FRO... awards" />
-            <marker date="1515660530054" expanded="true" signature="24245:24278" ph="SELECT * FRO... awards" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/journalpapersregister_finish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <marker date="1515660631750" expanded="true" signature="501:637" ph="insert into journalpapers... " />
+            <marker date="1515661648643" expanded="true" signature="5249:5263" ph="SELECT * FRO... conferencepapers" />
+            <marker date="1515661648643" expanded="true" signature="5249:5276" ph="SELECT * FRO... journalpapers" />
+            <marker date="1515661648643" expanded="true" signature="6406:6446" ph="SELECT * FRO... conferencepapers" />
+            <marker date="1515661648643" expanded="true" signature="7288:7328" ph="SELECT * FRO... conferencepapers" />
+            <marker date="1515661648643" expanded="true" signature="8417:8457" ph="SELECT * FRO... conferencepapers" />
+            <marker date="1515661648643" expanded="true" signature="10992:11013" ph="SELECT * FRO... patents" />
+            <marker date="1515661648643" expanded="true" signature="11957:11991" ph="SELECT * FRO... researchgrant" />
+            <marker date="1515661648643" expanded="true" signature="12827:12861" ph="SELECT * FRO... researchgrant" />
+            <marker date="1515661648643" expanded="true" signature="13944:13978" ph="SELECT * FRO... researchgrant" />
+            <marker date="1515661648643" expanded="true" signature="16297:16328" ph="SELECT * FRO... courseinformation" />
+            <marker date="1515661648643" expanded="true" signature="17294:17338" ph="SELECT * FRO... courseinformation" />
+            <marker date="1515661648643" expanded="true" signature="18184:18228" ph="SELECT * FRO... courseinformation" />
+            <marker date="1515661648643" expanded="true" signature="19321:19365" ph="SELECT * FRO... courseinformation" />
+            <marker date="1515661648643" expanded="true" signature="21439:21459" ph="SELECT * FRO... awards" />
+            <marker date="1515661648643" expanded="true" signature="22325:22358" ph="SELECT * FRO... awards" />
+            <marker date="1515661648643" expanded="true" signature="23149:23182" ph="SELECT * FRO... awards" />
+            <marker date="1515661648643" expanded="true" signature="24200:24233" ph="SELECT * FRO... awards" />
           </folding>
         </state>
       </provider>
