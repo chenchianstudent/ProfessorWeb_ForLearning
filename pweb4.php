@@ -1048,7 +1048,7 @@
                             </tr>
                             <?php }?>
 
-
+                            </tbody>
                         </table>
                         <p>&nbsp;</p>
                     </div>
@@ -1308,49 +1308,28 @@
 
                     <h2 class="title">獲獎／Awards</h2>
                     <p></p>
+                    <?php
+                    include("mysql_connect.inc.php");
+                    mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                    mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                    $poi=mysqli_select_db("awards");//我要從member這個資料庫撈資料
+                    mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                    $data=mysqli_query($link,"SELECT * FROM awards");//從member中選取全部(*)的資料
+
+                    ?>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                            <?php
+                            for($i=1;$i<=mysqli_num_rows($data);$i++)
+                            { $rows=mysqli_fetch_row($data);
+                            ?>
                             <tbody><tr class="odd">
-                                <td width="5%">1</td>
-                                <td>2011 IJICIC Most Cited Paper Award，IJICIC，2012.04.17</td>
+                                <td width="5%"><?php echo $i?></td>
+                                <td><?php echo $rows[1]?>,<?php echo $rows[2]?>,<?php echo $rows[3]?></td>
                             </tr>
-                            <tr>
-                                <td width="5%">2</td>
-                                <td>中華民國資訊學會2002年最佳碩士論文指導佳作獎，中華民國資訊學會，2002.10.1</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">3</td>
-                                <td>中華民國技職教育學會2002年技職教育技術論文類傑出成就獎，中華民國技職教育學會，2002.10.1</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">4</td>
-                                <td>指導專題(王威澤等五名同學)「以XML/EDI為基礎的安全性電子商務系統」獲得第四屆全國經營實務專題成果發表研討會TIC100科技創新獎，國立雲林科技大學，2001.05.19</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">5</td>
-                                <td>中華民國資訊學會2000年最佳碩士論文指導優等獎，中華民國資訊學會，2000.10.1</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">6</td>
-                                <td>國科會八十九學年度甲種研究獎勵(NSC90-2813-C-324-001-007)，國科會，2000.08.1</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">7</td>
-                                <td>國科會八十八學年度甲種研究獎勵(NSC89-2813-C-324-001-006)，國科會，1999.08.1</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">8</td>
-                                <td>國科會八十七學年度甲種研究獎勵(NSC88-2813-C-324-001-007)，國科會，1998.08.1</td>
-                            </tr>
-                            <tr class="odd">
-                                <td width="5%">9</td>
-                                <td>國科會八十六學年度甲種研究獎勵(NSC87-2813-C-324-001-007)，國科會，1997.08.1</td>
-                            </tr>
-                            <tr>
-                                <td width="5%">10</td>
-                                <td>國科會八十五學年度甲種研究獎勵(NSC86-2813-C-324-001-003)，國科會，1996.08.1</td>
-                            </tr>
-                            </tbody></table>
+                            <?php }?>
+                            </tbody>
+                        </table>
                         <p>&nbsp;</p>
                     </div>
                     <p></p>
