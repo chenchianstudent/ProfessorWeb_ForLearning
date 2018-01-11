@@ -129,7 +129,7 @@
             <ul class="nav navbar-nav">
 
                 <li><a href="pweb2.php">首頁</a></li>
-                <li><a href="pweb-1.html">簡歷</a></li>
+                <li><a href="pweb1.php">簡歷</a></li>
                 <li><a href="pweb3.php">學術</a></li>
                 <li><a href="pweb4.php">著作</a></li>
                 <li class="active"><a href="pweb5.php">學生</a></li>
@@ -148,7 +148,7 @@
         <div class="col-sm-2 sidenav" style="background-color:  #9afff0">
         </div>
         <div class="col-sm-8 text-left">
-            <h1 align="center">學生名單</h1>
+            <h1 align="center" style="font-size:3.5em "><b>學生名單</b></h1>
             <?php
             include("mysql_connect.inc.php");
             mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼

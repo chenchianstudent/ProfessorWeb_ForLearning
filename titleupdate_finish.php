@@ -18,7 +18,7 @@ if($_SESSION['name'] != null)
     $id = $_SESSION['name'];
 
     //更新資料庫資料語法
-    $sql = "update titlename2 set saying='$saying' where 1";
+    $sql = "update titlename2 set saying='$saying' where id=1";
 
     if(mysqli_query($link,$sql))
     {

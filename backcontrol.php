@@ -105,8 +105,24 @@ if($_SESSION['name'] != null){
         </div>
         <div class="col-sm-8 text-left">
             <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
-            <?php echo $rows[1]?>
-            <button type="submit"><a href="titleupdate.php">修改名言</a></button>
+            <?php
+            include("mysql_connect.inc.php");
+            mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+            mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+            $poi=mysqli_select_db("titlename2");//我要從member這個資料庫撈資料
+            mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+          //  $data=mysqli_query($link,"SELECT * FROM titlename2");//從member中選取全部(*)的資料
+            $sql = "SELECT * FROM titlename2 where 1";
+            $result = mysqli_query($link,$sql);
+            $row = mysqli_fetch_row($result);
+            ?>
+           <?php echo "<form name=\"form\" method=\"post\" action=\"titleupdate_finish.php\">";
+                echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" /><br>";
+                echo "名言：<input type=\"text\" name=\"pw\" value=\"$row[2]\"/><br>";
+                echo "<input type=\"submit\" name=\"button\" value=\"修改名言\" />";
+                echo "</form>"; ?>
+<!--            --><?php //echo $rows[1]?>
+<!--            <button type="submit"><a href="titleupdate.php">修改名言</a></button>-->
             <hr>
             <h3><span style="font-size: 1.2em">聯絡方式</span></h3>
             <p><span style="font-size:1em ">●tel:+886-4-23323456  分機：1864</span></p>

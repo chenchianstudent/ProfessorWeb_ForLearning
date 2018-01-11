@@ -104,7 +104,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="pweb2.php">首頁</a></li>
-                <li><a href="pweb-1.html">簡歷</a></li>
+                <li><a href="pweb1.php">簡歷</a></li>
                 <li><a href="pweb3.php">學術</a></li>
                 <li class="active"><a href="pweb4.php">著作</a></li>
                 <li><a href="pweb5.php">學生</a></li>
