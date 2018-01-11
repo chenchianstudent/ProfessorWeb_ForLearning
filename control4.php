@@ -1118,7 +1118,7 @@ if($_SESSION['name'] != null){
 
 
                     <h2 class="title">授課課程／Course Information</h2>
-                    <p>點擊可取得詳細資訊</p>
+                    <p>點擊課名稱可取得詳細資訊</p>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
 
@@ -1388,7 +1388,7 @@ if($_SESSION['name'] != null){
                                             $sql = "SELECT * FROM awards where number";
                                             $result = mysqli_query($link,$sql);
                                             $row = mysqli_fetch_row($result);
-                                            echo "<form name=\"form\" method=\"post\" action=\"patentsupdate.php\">";
+                                            echo "<form name=\"form\" method=\"post\" action=\"awardsupdate.php\">";
                                             echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                             echo "<input type=\"submit\" name=\"button\" value=\"修改\" />";
                                             echo "</form>";
@@ -1400,7 +1400,7 @@ if($_SESSION['name'] != null){
                                             $sql = "SELECT * FROM awards where number";
                                             $result = mysqli_query($link,$sql);
                                             $row = mysqli_fetch_row($result);
-                                            echo "<form name=\"form\" method=\"post\" action=\"patentsdelete_finish.php\">";
+                                            echo "<form name=\"form\" method=\"post\" action=\"awardsdelete_finish.php\">";
                                             echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                             echo "<input type=\"submit\" name=\"button\" value=\"刪除\" />";
                                             echo "</form>";
@@ -1418,7 +1418,7 @@ if($_SESSION['name'] != null){
                                         $sql = "SELECT * FROM awards where number";
                                         $result = mysqli_query($link,$sql);
                                         $row = mysqli_fetch_row($result);
-                                        echo "<form name=\"form\" method=\"post\" action=\"patentsregister_finish.php\">";
+                                        echo "<form name=\"form\" method=\"post\" action=\"awardsregister_finish.php\">";
                                         //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
                                         echo "獲獎名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
                                         echo "獲獎地點：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";

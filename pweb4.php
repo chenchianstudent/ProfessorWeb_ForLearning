@@ -1063,7 +1063,7 @@
 
 
                     <h2 class="title">授課課程／Course Information</h2>
-                    <p>點擊可取得詳細資訊</p>
+                    <p>點擊課程名稱可取得詳細資訊</p>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
 
