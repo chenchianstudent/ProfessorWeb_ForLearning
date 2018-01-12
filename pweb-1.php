@@ -1,24 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>王明祥簡歷</title>
+    <title>簡歷</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-        }
         /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
         .row.content {
             height: 700px;
@@ -48,6 +41,78 @@
                 height: auto;
             }
         }
+        .tb_main {
+            border-collapse: collapse;
+            border: 2px solid #996;
+            font: normal 80%/140% verdana, arial, helvetica, sans-serif;
+            color: #222222;
+            background: #fffff0;
+        }
+        .tb_main caption {
+            padding: 0 .4em .4em;
+            text-align: left;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #333;
+            background: transparent;
+        }
+        .tb_main td, th {
+            border-left: 1px solid #cc9;
+            border-bottom: 1px solid #cc9;
+            padding: .3em;
+        }
+        .tb_main thead th, tfoot th {
+            border: 1px solid #cc9;
+            text-align: left;
+            font-size: 1em;
+            font-weight: bold;
+            color: #444;
+            background: #dbd9c0;
+        }
+        .tb_main td a {
+            background: transparent;
+            color: #222222;
+            text-decoration: none;
+            border-bottom: 1px dotted #cc9;
+        }
+        .tb_main td a:hover {
+            background: transparent;
+            color: #666;
+            border-bottom: 1px dotted #72724c;
+        }
+        .tb_main th a {
+            background: transparent;
+            color: #72724c;
+            text-decoration: none;
+            font-weight:bold;
+            border-bottom: 1px dotted #cc9;
+        }
+        .tb_main th a:hover {
+            background: transparent;
+            color: #666;
+            border-bottom: 1px dotted #72724c;
+        }
+        .tb_main th, tbody td {
+            vertical-align: top;
+            text-align: left;
+        }
+        .tb_main tfoot td {
+            border: 1px solid #996;
+        }
+        .tb_main .odd {
+            color: #222222;
+            background: #f7f5dc;
+        }
+        .tb_main tr:hover {
+            color: #333;
+            background: #fff;
+        }
+        .tb_main tr:hover th,
+        .tb_main tr.odd:hover th {
+            color: #333;
+            background: #ddd59b;
+        }
     </style>
 </head>
 <body>
@@ -68,98 +133,111 @@ if($_SESSION['name'] != null){
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav" >
-                <li><a href="backcontrol.php">控制台</a></li>
-                <li class="active"><a href="pweb-1.php">簡歷</a></li>
-                <li><a href="control3.php">學術</a></li>
-                <li><a href="control4.php">著作</a></li>
-                <li><a href="student.php">學生</a></li>
-                <li><a href="control6.php">常用連結</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>
-                        Logout</a></li>
+                    <li><a href="backcontrol.php">控制台</a></li>
+                    <li class="active"><a href="pweb-1.php">簡歷</a></li>
+                    <li><a href="control3.php">學術</a></li>
+                    <li><a href="control4.php">著作</a></li>
+                    <li><a href="student.php">學生</a></li>
+                    <li><a href="control6.php">常用連結</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>
+                            Logout</a></li>
+                </ul>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="container" style="background-color: #adffad;width: 100%;height: 100%" align="center">
-    <div class="col-sm-3 sidenav">
-        <h5></h5>
-        <img src="990102449.jpg" width="300" height="408" alt="黃明祥教授">
-        <h4 style="font-size: 4em"><b>黃明祥</b></h4>
-        <br>
-        <div class="input-group">
-            <ul class="nav nav-tabs">
-                <liclass="active"><a data-toggle="tab" href="#home" style="font-size: 2em"><b>基本資料</b></a></li>
-                <li><a data-toggle="tab" href="#menu1" style="font-size: 2em"><b>學歷</b></a></li>
-                <li><a data-toggle="tab" href="#menu2" style="font-size: 2em"><b>經歷</b></a></li>
-                <li><a data-toggle="tab" href="#menu3" style="font-size: 2em"><b>專長</b></a></li>
-            </ul>
-
-        </div>
-    </div>
-
-    <div class="tab-content" >
-        <div id="home" class="tab-pane fade in active">
-            <div id="content">
-                <div class="post">
-
-                    <h2 class="title" style="font-size: 3em"><b>基本資料</b></h2>
-                    <p></p>
-
-                    <p></p>
-                </div>
-                <div style="clear: both;">&nbsp;</div>
+<div class="container-fluid" align="center" style="background-color: #e2ffb7">
+    <div class="row content">
+        <div class="col-sm-3 sidenav">
+            <h5></h5>
+            <img src="990102449.jpg" width="300" height="408" alt="黃明祥教授">
+            <h4 style="font-size: 4em"><b>黃明祥</b></h4>
+            <br>
+            <div class="input-group">
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#home">基本資料</a></li>
+                    <li><a data-toggle="pill" href="#menu1">學歷</a></li>
+                    <li><a data-toggle="pill" href="#menu2">經歷</a></li>
+                    <li><a data-toggle="pill" href="#menu3">專長</a></li>
+                </ul>
             </div>
         </div>
-        <div id="menu1" class="tab-pane fade">
-            <div id="content">
-                <div class="post">
-
-                    <h2 class="title" style="font-size: 3em"><b>學歷</b></h2>
-                    <p></p>
-
-
-                </div>
-                <div style="clear: both;">&nbsp;</div>
-            </div>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-            <div id="content">
-                <div class="post">
-
-
-                    <h2 class="title" style="font-size: 3em"><b>經歷</b></h2>
-                    <p></p>
-
-                            <p></p>
-
-                    </div>
-                    <div style="clear: both;">&nbsp;</div>
-                </div>
-            </div>
-            <div id="menu3" class="tab-pane fade">
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
                 <div id="content">
                     <div class="post">
+                        <h2 class="title" style="font-size: 3em"><b>基本資料</b></h2><br>
 
-                        <h2 class="title" style="font-size: 3em"><b>專長</b></h2>
                         <?php
                         include("mysql_connect.inc.php");
                         mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
                         mysqli_select_db("105021007");//我要從member這個資料庫撈資料
-                        $poi=mysqli_select_db("expertise");//我要從member這個資料庫撈資料
+                        $poi=mysqli_select_db("basicinformation");//我要從member這個資料庫撈資料
                         mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
-                        $data=mysqli_query($link,"SELECT * FROM expertise");//從member中選取全部(*)的資料
+                        $data=mysqli_query($link,"SELECT * FROM basicinformation");//從member中選取全部(*)的資料
 
                         ?>
                         <?php
-                        $sql = "SELECT * FROM expertise where number";
+                        for($i=1;$i<=mysqli_num_rows($data);$i++)
+                        { $rows=mysqli_fetch_row($data);
+                            ?>
+                            <p><b>姓名:<?php echo $rows[1]?></b></p><br>
+                            <p><b>任職單位:<?php echo $rows[2]?></b></p><br>
+                            <p><b>E-mail:<a href="mailto:<?php echo $rows[3]?>"><?php echo $rows[3]?></a></b></p><br>
+
+                                        <p>
+                                            <?php
+                                            $sql = "SELECT * FROM basicinformation where number";
+                                            $result = mysqli_query($link,$sql);
+                                            $row = mysqli_fetch_row($result);
+                                            echo "<form name=\"form\" method=\"post\" action=\"basicinformationupdate.php\">";
+                                            echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
+                                            echo "</form>";
+
+                                            ?>
+                                        </p>
+
+                            </table>
+
+
+                        <?php }?>
+
+
+
+                        <div class="entry">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <div id="content">
+                    <div class="post">
+
+
+                        <h2 class="title" style="font-size: 3em"><b>學歷</b></h2>
+                        <?php
+                        include("mysql_connect.inc.php");
+                        mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                        mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                        $poi=mysqli_select_db("education");//我要從member這個資料庫撈資料
+                        mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                        $data=mysqli_query($link,"SELECT * FROM education");//從member中選取全部(*)的資料
+
+                        ?>
+                        <?php
+                        $sql = "SELECT * FROM education where number";
                         $result = mysqli_query($link,$sql);
                         $row = mysqli_fetch_row($result);
-                        echo "<form name=\"form\" method=\"post\" action=\"studentregister_finish.php\">";
+                        echo "<form name=\"form\" method=\"post\" action=\"educationregister_finish.php\">";
                         //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
-                        echo "專長：<input type=\"text\" name=\"pw\" value=\"*\" /> ";
+                        echo "學歷：<input type=\"text\" name=\"pw\" value=\"*\" /> ";
                         echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"新增\" />";
                         echo "</form>";
 
@@ -174,10 +252,10 @@ if($_SESSION['name'] != null){
                                     <td>
                                         <p>
                                             <?php
-                                            $sql = "SELECT * FROM web where number";
+                                            $sql = "SELECT * FROM education where number";
                                             $result = mysqli_query($link,$sql);
                                             $row = mysqli_fetch_row($result);
-                                            echo "<form name=\"form\" method=\"post\" action=\"webupdate.php\">";
+                                            echo "<form name=\"form\" method=\"post\" action=\"educationupdate.php\">";
                                             echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                             echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
                                             echo "</form>";
@@ -188,10 +266,10 @@ if($_SESSION['name'] != null){
                                     <td>
                                         <p>
                                             <?php
-                                            $sql = "SELECT * FROM web where number";
+                                            $sql = "SELECT * FROM education where number";
                                             $result = mysqli_query($link,$sql);
                                             $row = mysqli_fetch_row($result);
-                                            echo "<form name=\"form\" method=\"post\" action=\"webdelete_finish.php\">";
+                                            echo "<form name=\"form\" method=\"post\" action=\"educationdelete_finish.php\">";
                                             echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
                                             echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
                                             echo "</form>";
@@ -207,16 +285,178 @@ if($_SESSION['name'] != null){
 
 
 
+                        <div class="entry">
+
+                        </div>
+
+
                     </div>
-                    <div style="clear: both;">&nbsp;</div>
+
                 </div>
             </div>
-        </div>
-    </div>
+            <div id="menu2" class="tab-pane fade">
+                <div id="content">
+                    <div class="post">
+
+                        <h2 class="title" style="font-size: 3em"><b>經歷</b></h2>
+                        <?php
+                        include("mysql_connect.inc.php");
+                        mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                        mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                        $poi=mysqli_select_db("experience");//我要從member這個資料庫撈資料
+                        mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                        $data=mysqli_query($link,"SELECT * FROM experience");//從member中選取全部(*)的資料
+
+                        ?>
+                        <?php
+                        $sql = "SELECT * FROM experience where number";
+                        $result = mysqli_query($link,$sql);
+                        $row = mysqli_fetch_row($result);
+                        echo "<form name=\"form\" method=\"post\" action=\"experienceregister_finish.php\">";
+                        //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                        echo "經歷：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+                        echo "時間：<input type=\"text\" name=\"telephone\" value=\"*\" />";
+                        echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"新增\" />";
+                        echo "</form>";
+
+                        ?>
+                        <?php
+                        for($i=1;$i<=mysqli_num_rows($data);$i++)
+                        { $rows=mysqli_fetch_row($data);
+                            ?>
+                            <p><b><?php echo $rows[1]?></b>(<b><?php echo $rows[2]?></b>)</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            <?php
+                                            $sql = "SELECT * FROM experience where number";
+                                            $result = mysqli_query($link,$sql);
+                                            $row = mysqli_fetch_row($result);
+                                            echo "<form name=\"form\" method=\"post\" action=\"experienceupdate.php\">";
+                                            echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
+                                            echo "</form>";
+
+                                            ?>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <?php
+                                            $sql = "SELECT * FROM experience where number";
+                                            $result = mysqli_query($link,$sql);
+                                            $row = mysqli_fetch_row($result);
+                                            echo "<form name=\"form\" method=\"post\" action=\"experiencedelete_finish.php\">";
+                                            echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                            echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                            echo "</form>";
+
+                                            ?>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        <?php }?>
+
+
+                        <div class="entry">
+                            <p></p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <div id="menu3" class="tab-pane fade">
+                    <div id="content">
+                        <div class="post">
+
+                            <h2 class="title" style="font-size: 3em"><b>專長</b></h2>
+                            <?php
+                            include("mysql_connect.inc.php");
+                            mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+                            mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+                            $poi=mysqli_select_db("expertise");//我要從member這個資料庫撈資料
+                            mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+                            $data=mysqli_query($link,"SELECT * FROM expertise");//從member中選取全部(*)的資料
+
+                            ?>
+                            <?php
+                            $sql = "SELECT * FROM expertise where number";
+                            $result = mysqli_query($link,$sql);
+                            $row = mysqli_fetch_row($result);
+                            echo "<form name=\"form\" method=\"post\" action=\"expertiseregister_finish.php\">";
+                            //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                            echo "專長：<input type=\"text\" name=\"pw\" value=\"*\" /> ";
+                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"新增\" />";
+                            echo "</form>";
+
+                            ?>
+                            <?php
+                            for($i=1;$i<=mysqli_num_rows($data);$i++)
+                            { $rows=mysqli_fetch_row($data);
+                                ?>
+                                <p><b><?php echo $rows[1]?></b></p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <?php
+                                                $sql = "SELECT * FROM expertise where number";
+                                                $result = mysqli_query($link,$sql);
+                                                $row = mysqli_fetch_row($result);
+                                                echo "<form name=\"form\" method=\"post\" action=\"expertiseupdate.php\">";
+                                                echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                                echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"修改\" />";
+                                                echo "</form>";
+
+                                                ?>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <?php
+                                                $sql = "SELECT * FROM expertise where number";
+                                                $result = mysqli_query($link,$sql);
+                                                $row = mysqli_fetch_row($result);
+                                                echo "<form name=\"form\" method=\"post\" action=\"expertisedelete_finish.php\">";
+                                                echo "<input type='hidden' name=\"id\" value=\"$rows[0]\" />";
+                                                echo "<input class='poi' type=\"submit\" name=\"button\" value=\"刪除\" />";
+                                                echo "</form>";
+
+                                                ?>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+                            <?php }?>
+
+
+                            <div class="entry">
+
+
+                                <p>&nbsp;</p>
+                            </div>
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+</div>
+
     <footer class="container-fluid text-center">
-        <p>Powerd by 絕對不是陳麒安 但分數請打給陳麒安</p>
+        <p>Powerd by 絕對不是陳麒安 注意!!!你正在管理員介面</p>
         <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
     </footer>
+
 </body>
 </html>
 <?php

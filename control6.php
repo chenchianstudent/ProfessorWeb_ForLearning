@@ -227,7 +227,7 @@ if($_SESSION['name'] != null){
 </div>
 
 <footer class="container-fluid text-center">
-    <p>Powerd by 絕對不是陳麒安  但分數請打給陳麒安</p>
+    <p>Powerd by 絕對不是陳麒安 注意!!!你正在管理員介面</p>
     <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
 </footer>
 
