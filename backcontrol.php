@@ -122,13 +122,28 @@ if($_SESSION['name'] != null){
                 echo "名言：<input type=\"text\" name=\"pw\" value=\"$row[2]\" size='50'/>";
                 echo "<input class='poi' type=\"submit\" name=\"button\" value=\"修改名言\" />";
                 echo "</form>"; ?>
-<!--            --><?php //echo $rows[1]?>
-<!--            <button type="submit"><a href="titleupdate.php">修改名言</a></button>-->
             <hr>
-            <h3><span style="font-size: 1.2em">聯絡方式</span></h3>
-            <p><span style="font-size:1em ">●tel:+886-4-23323456  分機：1864</span></p>
-            <p><span style="font-size:1em ">●Office：I420</span></p>
-            <p><span style="font-size:1em ">●E-mail:mshwang@asia.edu.tw</span></p>
+            <?php
+            include("mysql_connect.inc.php");
+            mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+            mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+            $poi=mysqli_select_db("contact");//我要從member這個資料庫撈資料
+            mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+            //  $data=mysqli_query($link,"SELECT * FROM contact");//從member中選取全部(*)的資料
+            $sql = "SELECT * FROM contact where 1";
+            $result = mysqli_query($link,$sql);
+            $row = mysqli_fetch_row($result);
+            ?>
+            <h3><span style='font-size: 1.2em'>聯絡方式</span></h3>
+            <?php
+            echo "<form name=\"form\" method=\"post\" action=\"contactupdate_finish.php\">";
+            echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" /><br>";
+            echo "●tel:<input type=\"text\" name=\"pw\" value=\"$row[1]\" size='15'/>";
+            echo "分機：<input type=\"text\" name=\"telephone\" value=\"$row[2]\" size='5' /> <br>";
+            echo "●Office：<input type=\"text\" name=\"address\" value=\"$row[3]\" size='5' /> <br>";
+            echo "●E-mail：<input type=\"text\" name=\"other\" value=\"$row[4]\" /> <br>";
+            echo "<input class='poi' type=\"submit\" name=\"button\" value=\"修改\" />";
+            echo "</form>"; ?>
 
 
 

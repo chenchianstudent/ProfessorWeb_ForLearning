@@ -6,6 +6,7 @@
  * Time: 下午 07:53
  */?>
 <?php
+session_start();
 include("mysql_connect.inc.php");
 mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
 mysqli_select_db("105021007");//我要從member這個資料庫撈資料
@@ -105,13 +106,34 @@ $rows=mysqli_fetch_row($data);
             <p>專任講授教授</p>
         </div>
         <div class="col-sm-8 text-left">
+            <?php
+            session_start();
+            include("mysql_connect.inc.php");
+            mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+            mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+            $poi=mysqli_select_db("titlename2");//我要從member這個資料庫撈資料
+            mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+            $data=mysqli_query($link,"SELECT * FROM titlename2");//從member中選取全部(*)的資料
+            $rows=mysqli_fetch_row($data);
+            ?>
+
             <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
             <?php echo $rows[2]?>
             <hr>
+            <?php
+            session_start();
+            include("mysql_connect.inc.php");
+            mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
+            mysqli_select_db("105021007");//我要從member這個資料庫撈資料
+            $poi=mysqli_select_db("contact");//我要從member這個資料庫撈資料
+            mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
+            $data=mysqli_query($link,"SELECT * FROM contact");//從member中選取全部(*)的資料
+            $rows=mysqli_fetch_row($data);
+            ?>
             <h3><span style="font-size: 1.2em">聯絡方式</span></h3>
-            <p><span style="font-size:1em ">●tel:+886-4-23323456  分機：1864</span></p>
-            <p><span style="font-size:1em ">●Office：I420</span></p>
-            <p><span style="font-size:1em ">●E-mail:mshwang@asia.edu.tw</span></p>
+            <p><span style="font-size:1em ">●tel: <?php echo $rows[1]?>  分機： <?php echo $rows[2]?></span></p>
+            <p><span style="font-size:1em ">●Office： <?php echo $rows[3]?></span></p>
+            <p><span style="font-size:1em ">●E-mail: <?php echo $rows[4]?></span></p>
 
 
         </div>
