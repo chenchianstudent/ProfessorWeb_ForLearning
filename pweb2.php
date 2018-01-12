@@ -84,7 +84,7 @@ $rows=mysqli_fetch_row($data);
                 <li><a href="pweb3.php">學術</a></li>
                 <li><a href="pweb4.php">著作</a></li>
                 <li><a href="pweb5.php">學生</a></li>
-                <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
+                <li><a href="pweb6.php">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://120.108.117.245/~105021007/login"><span class="glyphicon glyphicon-log-in"></span>

@@ -111,7 +111,7 @@
                 <li class="active"><a href="pweb3.php">學術</a></li>
                 <li><a href="pweb4.php">著作</a></li>
                 <li><a href="pweb5.php">學生</a></li>
-                <li><a href="http://isrc.ccs.asia.edu.tw/www/index.php">常用連結</a></li>
+                <li><a href="pweb6.php">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://120.108.117.245/~105021007/login"><span class="glyphicon glyphicon-log-in"></span>
@@ -226,7 +226,7 @@
                             mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
                             $data=mysqli_query($link,"SELECT * FROM conferencepapers");//從member中選取全部(*)的資料
 
-                            ?>
+                        ?>
                             <div class="entry">
                                 <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
                                     <?php
@@ -243,6 +243,7 @@
                                     </tr>
                                     <?php }?>
                                     </tbody></table>
+                            </div>
                         <p>&nbsp;</p>
                     </div>
                     <p></p>

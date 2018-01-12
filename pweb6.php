@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
@@ -132,8 +133,8 @@
                 <li><a href="pweb1.php">簡歷</a></li>
                 <li><a href="pweb3.php">學術</a></li>
                 <li><a href="pweb4.php">著作</a></li>
-                <li class="active"><a href="pweb5.php">學生</a></li>
-                <li><a href="pweb6.php">常用連結</a></li>
+                <li><a href="pweb5.php">學生</a></li>
+                <li class="active"><a href="pweb6.php">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://120.108.117.245/~105021007/login"><span class="glyphicon glyphicon-log-in"></span>
@@ -148,14 +149,14 @@
         <div class="col-sm-2 sidenav" style="background-color:  #7ceeff">
         </div>
         <div class="col-sm-8 text-left">
-            <h1 align="center" style="font-size:3.5em "><b>學生名單</b></h1>
+            <h1 align="center" style="font-size:3.5em "><b>常用網址</b></h1>
             <?php
             include("mysql_connect.inc.php");
             mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
             mysqli_select_db("105021007");//我要從member這個資料庫撈資料
-            $poi=mysqli_select_db("student");//我要從member這個資料庫撈資料
+            $poi=mysqli_select_db("web");//我要從member這個資料庫撈資料
             mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
-            $data=mysqli_query($link,"SELECT * FROM student");//從member中選取全部(*)的資料
+            $data=mysqli_query($link,"SELECT * FROM web");//從member中選取全部(*)的資料
 
             ?>
             <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
@@ -164,7 +165,9 @@
                 { $rows=mysqli_fetch_row($data);
                 ?>
                 <tbody><tr class="odd">
-                    <td>學生:<?php echo $rows[1]?><br>學年度:<?php echo $rows[2]?><br>信箱: <?php echo $rows[3]?><br>連絡電話:<?php echo $rows[4]?><br></td>
+                    <td ><p align="center" style="font-size: 20px;"><b><?php echo $rows[1]?></b><br></p>
+                        <p align="center">網址: <a href="<?php echo $rows[2]?>"><?php echo $rows[2]?></a></p>
+                    </td>
                 </tr>
                 <?php }?>
 

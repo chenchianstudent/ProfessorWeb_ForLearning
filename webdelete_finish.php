@@ -14,16 +14,16 @@ $id = $_POST['id'];
 if($_SESSION['name'] != null)
 {
     //刪除資料庫資料語法
-    $sql = "delete from student where number='$id'";
+    $sql = "delete from web where number='$id'";
     if(mysqli_query($link,$sql))
     {
         echo '刪除成功!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=student.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=control6.php>';
     }
     else
     {
         echo '刪除失敗!';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=student.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=control6.php>';
     }
 }
 else
