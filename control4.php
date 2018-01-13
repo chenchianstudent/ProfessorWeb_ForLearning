@@ -141,6 +141,7 @@ if($_SESSION['name'] != null){
                 <div class="post">
 
                     <h2 class="title">期刊論文／Journal Papers</h2>
+                    <button type="submit" class="poi3"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
 
                         <?php
@@ -204,7 +205,11 @@ if($_SESSION['name'] != null){
                                             //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
                                             echo "期刊名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
                                             echo "出版社：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
-                                            echo "EI/SCI：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+                                            //echo "EI/SCI：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+                                            echo "EI/SCI:<select name=\"address\">
+                　                                <option value='EI' >EI</option>
+                　                                <option value='SCI'>CSI</option>
+                                                     </select><br>";
                                             echo "發表人：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
                                             echo "時間：<input type=\"text\" name=\"other1\" value=\"*\" /> <br>";
                                             echo "編碼：<input type=\"text\" name=\"other2\" value=\"*\" /> <br>";
@@ -229,6 +234,7 @@ if($_SESSION['name'] != null){
                 <div class="post">
 
                     <h2 class="title">專利／Patents</h2>
+                    <button type="submit" class="poi3"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
@@ -397,6 +403,7 @@ if($_SESSION['name'] != null){
                 <div class="post">
 
                     <h2 class="title">獲獎／Awards</h2>
+                    <button type="submit" class="poi3"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <div class="entry">
                         <?php

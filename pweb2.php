@@ -76,7 +76,7 @@ $rows=mysqli_fetch_row($data);
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Min-Shiang's Web</a>
+            <a class="navbar-brand" href="pweb2.php">Min-Shiang's Web</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -117,7 +117,7 @@ $rows=mysqli_fetch_row($data);
             $rows=mysqli_fetch_row($data);
             ?>
 
-            <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
+            <h1><span style="font-size: 1.5em"><b>黃明祥</b></span><span style="font-size: 1em">教授</span></h1>
             <?php echo $rows[2]?>
             <hr>
             <?php
@@ -130,7 +130,7 @@ $rows=mysqli_fetch_row($data);
             $data=mysqli_query($link,"SELECT * FROM contact");//從member中選取全部(*)的資料
             $rows=mysqli_fetch_row($data);
             ?>
-            <h3><span style="font-size: 1.2em">聯絡方式</span></h3>
+            <h3><span style="font-size: 1.2em"><b>聯絡方式</b></span></h3>
             <p><span style="font-size:1em ">●tel: <?php echo $rows[1]?>  分機： <?php echo $rows[2]?></span></p>
             <p><span style="font-size:1em ">●Office： <?php echo $rows[3]?></span></p>
             <p><span style="font-size:1em ">●E-mail: <?php echo $rows[4]?></span></p>
@@ -140,8 +140,8 @@ $rows=mysqli_fetch_row($data);
         <div class="col-sm-2 sidenav" style="background-color: #9effd0">
             <div class="well" style="background-color: #fffaad">
             <p><a href="https://www.facebook.com/mshwang">facebook</a></p>
-            <p><a href="#">poi1</a></p>
-            <p><a href="#">poi2</a></p>
+            <p><a href=" http://isrc.ccs.asia.edu.tw/www/cindex.php">another chinese web</a></p>
+            <p><a href="https://research.asia.edu.tw/TchEportfolio/index_1/mshwang">關於我</a></p>
             </div>
         </div>
     </div>

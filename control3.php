@@ -131,7 +131,7 @@ if($_SESSION['name'] != null){
 
 <div class="container" style="background-color: #ffb907;width: 100%;height: 150%" align="center">
     <h2> <span style="font-size:1.8em "><b>學術</b></span></h2>
-    <p align="center">就是學術 別懷疑</p>
+
     <ul class="nav nav-pills">
         <li class="active"><a data-toggle="pill" href="#home">指導大專生計畫／College Student Participation in Research Projects</a></li>
         <li><a data-toggle="pill" href="#menu1">指導論文／Thesis advising</a></li>
@@ -147,7 +147,7 @@ if($_SESSION['name'] != null){
 
                     <h2 class="title">
                         指導大專生計畫／College Student Participation in Research Projects</h2>
-                    <button type="submit"><a href="addPDF.php">下載pdf</a></button>
+                    <button type="submit" class="poi3"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <?php
                     include("mysql_connect.inc.php");
@@ -229,6 +229,7 @@ if($_SESSION['name'] != null){
 
 
                     <h2 class="title">指導論文／Thesis Advisor</h2>
+                    <button type="submit" class="poi3"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <?php
                     include("mysql_connect.inc.php");
@@ -310,6 +311,7 @@ if($_SESSION['name'] != null){
                 <div class="post">
 
                     <h2 class="title">研討會論文／Conference Papers</h2>
+                    <button type="submit" class="poi3"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
@@ -401,6 +403,7 @@ if($_SESSION['name'] != null){
                 <div class="post">
 
                     <h2 class="title">研究計畫／Research Grant</h2>
+                    <button type="submit" class="poi3"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <div class="entry">
                         <?php

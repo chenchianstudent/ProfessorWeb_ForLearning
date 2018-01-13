@@ -87,7 +87,7 @@ if($_SESSION['name'] != null){
                 <li><a href="control3.php">學術</a></li>
                 <li><a href="control4.php">著作</a></li>
                 <li><a href="student.php">學生</a></li>
-                <li><a href="#">常用連結</a></li>
+                <li><a href="control6.php">常用連結</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://120.108.117.245/~105021007/logout.php"><span class="glyphicon glyphicon-log-in"></span>
@@ -105,7 +105,7 @@ if($_SESSION['name'] != null){
             <p>專任講授教授</p>
         </div>
         <div class="col-sm-8 text-left">
-            <h1><span style="font-size: 1.5em">黃明祥</span><span style="font-size: 1em">教授</span></h1>
+            <h1><span style="font-size: 1.5em"><b>黃明祥</b></span><span style="font-size: 1em">教授</span></h1>
             <?php
             include("mysql_connect.inc.php");
             mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
@@ -134,7 +134,7 @@ if($_SESSION['name'] != null){
             $result = mysqli_query($link,$sql);
             $row = mysqli_fetch_row($result);
             ?>
-            <h3><span style='font-size: 1.2em'>聯絡方式</span></h3>
+            <h3><span style='font-size: 1.2em'><b>聯絡方式</b></span></h3>
             <?php
             echo "<form name=\"form\" method=\"post\" action=\"contactupdate_finish.php\">";
             echo "<input type=\"hidden\" name=\"id\" value=\"$row[0]\" /><br>";
@@ -153,7 +153,7 @@ if($_SESSION['name'] != null){
 
                 <p><a href="allmember.php">所有權限人員</a></p>
                 <p><a href="member.php">修改權限人員</a></p>
-                <p><a href="test.php">poi2</a></p>
+                <p><a href="record.php">登入紀錄</a></p>
             </div>
 
 

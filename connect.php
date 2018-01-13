@@ -19,7 +19,7 @@ $pw = sha1($_POST['pw']);
 
 //搜尋資料庫資料
 $sql = "SELECT * FROM nani where id = '$id'";
-echo $sql;
+//echo $sql;
 
 
 //$result = mysqli_query($link,$sql);
@@ -31,13 +31,13 @@ $result = $link->query($sql);
 //$row = $result->fetch_assoc();
 $row = $result->fetch_row();
 $email=$row[4];
-echo "+___+";
+//echo "+___+";
 //判斷帳號與密碼是否為空白
 //以及MySQL資料庫裡是否有這個會員
-echo $id."<br>";
-echo $pw."<br>";
-echo ">>".$row[0]."<<<br>";
-echo ">>".$row[2]."<<<br>";
+//echo $id."<br>";
+//echo $pw."<br>";
+//echo ">>".$row[0]."<<<br>";
+//echo ">>".$row[2]."<<<br>";
 if($id != null && $pw != null && $row[0] == $id && $row[2] == $pw)
 {
     //將帳號寫入session，方便驗證使用者身份
@@ -45,7 +45,7 @@ if($id != null && $pw != null && $row[0] == $id && $row[2] == $pw)
     echo '登入成功!';
     require_once ("mailTest.php");
     $sql="INSERT INTO log(`email`,`event_type`,`description`)VALUES('$email','login','user login success from".get_client_ip()."') ";
-    echo $sql;
+   // echo $sql;
     $link->query($sql);
     echo '<meta http-equiv=REFRESH CONTENT=1;url=backcontrol.php>';
 

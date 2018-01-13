@@ -120,7 +120,7 @@
 
 <div class="container" style="background-color: #adffad;width: 100%;height: 100%" align="center">
     <h2><span style="font-size:1.8em "><b>著作</b></span></h2>
-    <button type="submit"><a href="addPDF.php">下載PDF</a></button>
+
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">期刊論文／Journal Papers</a></li>
         <li><a data-toggle="tab" href="#menu1">專利／Patents</a></li>
@@ -134,6 +134,7 @@
                 <div class="post">
 
                     <h2 class="title">期刊論文／Journal Papers</h2>
+                    <button type="submit"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <?php
                     include("mysql_connect.inc.php");
@@ -171,6 +172,7 @@
                 <div class="post">
 
                     <h2 class="title">專利／Patents</h2>
+                    <button type="submit"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <?php
                     include("mysql_connect.inc.php");
@@ -246,6 +248,7 @@
                 <div class="post">
 
                     <h2 class="title">獲獎／Awards</h2>
+                    <button type="submit"><a href="addPDF.php">下載pdf</a></button>
                     <p></p>
                     <?php
                     include("mysql_connect.inc.php");

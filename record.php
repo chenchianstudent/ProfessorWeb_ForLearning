@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>人員名單</title>
+    <title>登入紀錄</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -125,25 +125,24 @@ if($_SESSION['name'] != null){
         </div>
     </div>
 </nav>
-<h1 style="font-size: 4em" align="center"><b>後臺人員</b></h1>
+<h1 style="font-size: 4em" align="center"><b>登入紀錄</b></h1>
 <?php
 include("mysql_connect.inc.php");
 mysqli_connect('localhost','105021007','#yV5X55K0');//與localhost連線、root是帳號、密碼處輸入自己設定的密碼
 mysqli_select_db("105021007");//我要從member這個資料庫撈資料
-$poi=mysqli_select_db("nani");//我要從member這個資料庫撈資料
+$poi=mysqli_select_db("log");//我要從member這個資料庫撈資料
 mysqli_query($link,"set names utf8");//設定utf8 中文字才不會出現亂碼
-$data=mysqli_query($link,"SELECT * FROM nani");//從member中選取全部(*)的資料
+$data=mysqli_query($link,"SELECT * FROM log");//從member中選取全部(*)的資料
 
 ?>
 <div class="entry" align="center">
     <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main" align="center">
         <tr class="odd">
             <td width="5%" align="center"><b>id</b></td>
-            <td align="center"><b>name</b></td>
-            <td align="center"><b>pw</b></td>
             <td align="center"><b>email</b></td>
-            <td align="center"><b>phone</b></td>
-            <td align="center"><b>type</b></td>
+            <td align="center"><b>event_type</b></td>
+            <td align="center"><b>description</b></td>
+            <td align="center"><b>time</b></td>
         </tr>
         <?php
         for($i=1;$i<=mysqli_num_rows($data);$i++)
@@ -155,7 +154,6 @@ $data=mysqli_query($link,"SELECT * FROM nani");//從member中選取全部(*)的�
             <td><?php echo $rows[2]?><br></td>
             <td><?php echo $rows[3]?><br></td>
             <td><?php echo $rows[4]?><br></td>
-            <td><?php echo $rows[5]?><br></td>
         </tr>
         <?php }?>
 
@@ -167,10 +165,10 @@ $data=mysqli_query($link,"SELECT * FROM nani");//從member中選取全部(*)的�
 
 
 
-    <footer class="container-fluid text-center">
-        <p>Powerd by 絕對不是陳麒安 注意!!!你正在管理員介面</p>
-        <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
-    </footer>
+            <footer class="container-fluid text-center">
+                <p>Powerd by 絕對不是陳麒安 注意!!!你正在管理員介面</p>
+                <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
+            </footer>
 </body>
 </html>
 <?php
