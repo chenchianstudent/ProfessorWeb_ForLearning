@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
     <style>
         footer {
             background-color: #555;
@@ -160,6 +161,36 @@ if($_SESSION['name'] != null){
                     ?>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                            <tr>
+                                <td width="5%">新增</td>
+                                <td>
+                                    <?php
+                                    $sql = "SELECT * FROM studentsproject where number";
+                                    $result = mysqli_query($link,$sql);
+                                    $row = mysqli_fetch_row($result);
+                                    echo "<form name=\"form\" method=\"post\" action=\"studentprojectregister_finish.php\">";
+                                    //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                                    echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"*\"/> <br>";
+//                                    echo "學年度：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+                                    echo "學年度:<select name=\"telephone\">
+                　                              <option value=\"103\">103</option>
+　                                              <option value=\"104\">104</option>
+　                                              <option value=\"105\">105</option>
+　                                              <option value=\"106\">106</option>
+                                                <option value=\"107\">107</option>
+                                                <option value=\"108\">108</option>
+                                                <option value=\"109\">109</option>
+                                                <option value=\"110\">110</option>
+                                                     </select><br>";
+                                    echo "教授名稱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+                                    echo "學生姓名：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
+                                    echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
+                                    echo "</form>";
+
+                                    ?>
+                                </td>
+                                <td width="5%"></td>
+                            </tr>
                             <?php
                             for($i=1;$i<=mysqli_num_rows($data);$i++)
                             { $rows=mysqli_fetch_row($data);
@@ -195,26 +226,7 @@ if($_SESSION['name'] != null){
 
                             </tr>
                             <?php }?>
-                            <tr class="odd">
-                                <td width="5%">新增</td>
-                                <td>
-                                    <?php
-                                    $sql = "SELECT * FROM studentsproject where number";
-                                    $result = mysqli_query($link,$sql);
-                                    $row = mysqli_fetch_row($result);
-                                    echo "<form name=\"form\" method=\"post\" action=\"studentprojectregister_finish.php\">";
-                                    //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
-                                    echo "計畫名稱：<input type=\"text\" name=\"pw\" value=\"*\"/> <br>";
-                                    echo "學年度：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
-                                    echo "教授名稱：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
-                                    echo "學生姓名：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
-                                    echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
-                                    echo "</form>";
 
-                                    ?>
-                                </td>
-                                <td></td>
-                            </tr>
 
                             </tbody></table>
                     </div>
@@ -242,6 +254,25 @@ if($_SESSION['name'] != null){
                     ?>
                     <div class="entry">
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                            <tr>
+                                <td width="5%">新增</td>
+                                <td>
+                                    <?php
+                                    $sql = "SELECT * FROM thesisadvisor where number";
+                                    $result = mysqli_query($link,$sql);
+                                    $row = mysqli_fetch_row($result);
+                                    echo "<form name=\"form\" method=\"post\" action=\"thesisadvisorregister_finish.php\">";
+                                    //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                                    echo "學生姓名：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+                                    echo "論文名稱<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+                                    echo "英文論文名稱：<input type=\"text\" name=\"address\" value=\"*\"/> <br>";
+                                    echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
+                                    echo "</form>";
+
+                                    ?>
+                                </td>
+                                <td></td>
+                            </tr>
                             <?php
                             for($i=1;$i<=mysqli_num_rows($data);$i++)
                             { $rows=mysqli_fetch_row($data);
@@ -278,25 +309,7 @@ if($_SESSION['name'] != null){
                                 </td>
                             </tr>
                             <?php }?>
-                            <tr>
-                                <td width="5%">新增</td>
-                                <td>
-                                    <?php
-                                    $sql = "SELECT * FROM thesisadvisor where number";
-                                    $result = mysqli_query($link,$sql);
-                                    $row = mysqli_fetch_row($result);
-                                    echo "<form name=\"form\" method=\"post\" action=\"thesisadvisorregister_finish.php\">";
-                                    //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
-                                    echo "學生姓名：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
-                                    echo "論文名稱<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
-                                    echo "英文論文名稱：<input type=\"text\" name=\"address\" value=\"*\"/> <br>";
-                                    echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
-                                    echo "</form>";
 
-                                    ?>
-                                </td>
-                                <td></td>
-                            </tr>
                             </tbody></table>
                         <p>&nbsp;</p>
                     </div>
@@ -327,6 +340,28 @@ if($_SESSION['name'] != null){
                             ?>
                             <div class="entry">
                                 <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                                    <tr class="odd">
+                                        <td width="5%">新增</td>
+                                        <td>
+                                            <?php
+                                            $sql = "SELECT * FROM conferencepapers where number";
+                                            $result = mysqli_query($link,$sql);
+                                            $row = mysqli_fetch_row($result);
+                                            echo "<form name=\"form\" method=\"post\" action=\"conferencepapersregister_finish.php\">";
+                                            //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                                            echo "論文名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+                                            echo "備註：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+                                            echo "發表地點：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+                                            echo "時間：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
+                                            echo "姓名：<input type=\"text\" name=\"other1\" value=\"*\" /> <br>";
+                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
+                                            echo "</form>";
+
+
+                                            ?>
+                                        </td>
+                                        <td></td>
+                                    </tr>
                                     <?php
                                     for($i=1;$i<=mysqli_num_rows($data);$i++)
                                     { $rows=mysqli_fetch_row($data);
@@ -366,28 +401,7 @@ if($_SESSION['name'] != null){
 
                                     </tr>
                                     <?php }?>
-                                    <tr class="odd">
-                                        <td width="5%">新增</td>
-                                        <td>
-                                            <?php
-                                            $sql = "SELECT * FROM conferencepapers where number";
-                                            $result = mysqli_query($link,$sql);
-                                            $row = mysqli_fetch_row($result);
-                                            echo "<form name=\"form\" method=\"post\" action=\"conferencepapersregister_finish.php\">";
-                                            //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
-                                            echo "論文名稱：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
-                                            echo "備註：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
-                                            echo "發表地點：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
-                                            echo "時間：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
-                                            echo "姓名：<input type=\"text\" name=\"other1\" value=\"*\" /> <br>";
-                                            echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
-                                            echo "</form>";
 
-
-                                            ?>
-                                        </td>
-                                        <td></td>
-                                    </tr>
 
                                     </tbody></table>
                         <p>&nbsp;</p>
@@ -416,6 +430,28 @@ if($_SESSION['name'] != null){
 
                         ?>
                         <table width="95%" border="0" cellpadding="0" cellspacing="0" class="tb_main">
+                            <tr class="odd">
+                                <td width="5%">新增</td>
+                                <td>
+                                    <?php
+                                    $sql = "SELECT * FROM researchgrant where number";
+                                    $result = mysqli_query($link,$sql);
+                                    $row = mysqli_fetch_row($result);
+                                    echo "<form name=\"form\" method=\"post\" action=\"researchgrantregister_finish.php\">";
+                                    //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
+                                    echo "種類：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
+                                    echo "編碼：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
+                                    echo "參與人員：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
+                                    echo "研究處：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
+                                    echo "計畫名稱：<input type=\"text\" name=\"other1\" value=\"*\" size='50' /> <br>";
+                                    echo "時間：<input type=\"text\" name=\"time\" value=\"*\" /> <br>";
+                                    echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
+                                    echo "</form>";
+
+                                    ?>
+                                </td>
+                                <td></td>
+                            </tr>
                                 <?php
                                 for($i=1;$i<=mysqli_num_rows($data);$i++)
                                 { $rows=mysqli_fetch_row($data);
@@ -452,28 +488,7 @@ if($_SESSION['name'] != null){
                                  </td>
                              </tr>
                              <?php }?>
-                             <tr class="odd">
-                                 <td width="5%">新增</td>
-                                 <td>
-                                     <?php
-                                     $sql = "SELECT * FROM researchgrant where number";
-                                     $result = mysqli_query($link,$sql);
-                                     $row = mysqli_fetch_row($result);
-                                     echo "<form name=\"form\" method=\"post\" action=\"researchgrantregister_finish.php\">";
-                                     //echo "編號：<input type=\"text\" name=\"id\" value=\"*\" /><br>";
-                                     echo "種類：<input type=\"text\" name=\"pw\" value=\"*\" /> <br>";
-                                     echo "編碼：<input type=\"text\" name=\"telephone\" value=\"*\" /> <br>";
-                                     echo "參與人員：<input type=\"text\" name=\"address\" value=\"*\" /> <br>";
-                                     echo "研究處：<input type=\"text\" name=\"other\" value=\"*\" /> <br>";
-                                     echo "計畫名稱：<input type=\"text\" name=\"other1\" value=\"*\" size='50' /> <br>";
-                                     echo "時間：<input type=\"text\" name=\"time\" value=\"*\" /> <br>";
-                                     echo "<input class='poi2' type=\"submit\" name=\"button\" value=\"確定\" />";
-                                     echo "</form>";
 
-                                     ?>
-                                 </td>
-                                 <td></td>
-                             </tr>
                              </tbody></table>
                         <p>&nbsp;</p>
                     </div>
@@ -484,10 +499,29 @@ if($_SESSION['name'] != null){
         </div>
     </div>
 </div>
+    <div id="gotop" style="background-color: #ffcf17"><p align="center" style="font-size: 1.5em">返回至最上層</p></div>
 <footer class="container-fluid text-center">
     <p>Powerd by 絕對不是陳麒安 注意!!!你正在管理員介面</p>
     <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
 </footer>
+    <!-- Start 往頂部箭頭 Jquery碼//-->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#gotop").click(function(){
+                jQuery("html,body").animate({
+                    scrollTop:0
+                },1000);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300){
+                    $('#gotop').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
    <?php

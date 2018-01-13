@@ -291,9 +291,29 @@
         </div>
     </div>
 </div>
+<div id="gotop" style="background-color:   #7cff70"><p align="center" style="font-size: 1.5em">返回至最上層</p></div>
 <footer class="container-fluid text-center">
     <p>Powerd by 絕對不是陳麒安 但分數請打給陳麒安</p>
     <script src="http://www.dreamhome.com.tw/escounter/counter.asp?name=28437699&dir=1"></script>
 </footer>
+
+<!-- Start 往頂部箭頭 Jquery碼//-->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#gotop").click(function(){
+            jQuery("html,body").animate({
+                scrollTop:0
+            },1000);
+        });
+        $(window).scroll(function() {
+            if ( $(this).scrollTop() > 300){
+                $('#gotop').fadeIn("fast");
+            } else {
+                $('#gotop').stop().fadeOut("fast");
+            }
+        });
+    });
+</script>
 </body>
 </html>
